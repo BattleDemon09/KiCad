@@ -1,2 +1,3 @@
 # KiCad
-Contains all KiCad files for the car
+KiCad Schematics and PCBs
+Please save all KiCad work here in a relevant folder
