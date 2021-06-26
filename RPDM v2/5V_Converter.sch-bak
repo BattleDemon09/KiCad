@@ -1,0 +1,38 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 33
+Title ""
+Date ""
+Rev ""
+Comp "UOW Motorsport"
+Comment1 ""
+Comment2 ""
+Comment3 "Brandon Shaw"
+Comment4 "Design By:"
+$EndDescr
+$Comp
+L Converter_DCDC:OKI-78SR-5_1.5-W36-C U1
+U 1 1 5E55EF31
+P 3700 3200
+F 0 "U1" H 3700 3442 50  0000 C CNN
+F 1 "OKI-78SR-5_1.5-W36-C" H 3700 3351 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_muRata_OKI-78SR_Vertical" H 3750 2950 50  0001 L CIN
+F 3 "https://power.murata.com/data/power/oki-78sr.pdf" H 3700 3200 50  0001 C CNN
+	1    3700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Converter_DCDC:OKI-78SR-5_1.5-W36-C U2
+U 1 1 5E55FA64
+P 4800 3200
+F 0 "U2" H 4800 3442 50  0000 C CNN
+F 1 "OKI-78SR-5_1.5-W36-C" H 4800 3351 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_muRata_OKI-78SR_Vertical" H 4850 2950 50  0001 L CIN
+F 3 "https://power.murata.com/data/power/oki-78sr.pdf" H 4800 3200 50  0001 C CNN
+	1    4800 3200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

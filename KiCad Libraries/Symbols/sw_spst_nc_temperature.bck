@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SW_SPST_Temperature
+D Single Pole Single Throw (SPST) switch, temperature dependent
+K temperature switch
+$ENDCMP
+#
+#End Doc Library

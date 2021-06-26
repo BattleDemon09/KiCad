@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DCM4623TD2K13E0T00
+D 500W 41.67A Isolated DC/DC Converter Module, regulated 12V (7.2 V to 13.2 V Trim) Output Voltage, 160V to 420V Input Voltage
+K Vicor isolated regulated DC/DC Converter module
+F http://www.vicorpower.com/documents/datasheets/DCM4623xD2K13E0yzz_ds.pdf
+$ENDCMP
+#
+#End Doc Library

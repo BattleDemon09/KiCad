@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ACS71240
+D 50A Current Sensor IC ACS71240LLCBTR-050U5
+F https://www.allegromicro.com/~/media/Files/Datasheets/ACS71240-Data-Sheet.ashx
+$ENDCMP
+#
+#End Doc Library

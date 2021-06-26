@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name RPDM-v2-rescue)(type Legacy)(uri "${KIPRJMOD}/RPDM v2-rescue.lib")(options "")(descr ""))
+  (lib (name RPDM_v1-rescue)(type Legacy)(uri "${KIPRJMOD}/RPDM v1-rescue.lib")(options "")(descr ""))
+)
