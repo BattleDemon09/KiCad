@@ -3,14 +3,14 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 28
+Sheet 30 29
 Title "TSAL Circuit"
-Date "2020-03-23"
-Rev "1"
+Date "2021-06-28"
+Rev "2"
 Comp "UOW Motorsport"
 Comment1 ""
 Comment2 ""
-Comment3 "Brandon Shaw"
+Comment3 "Brandon Shaw, Joshua Smedley"
 Comment4 "Design By:"
 $EndDescr
 Text HLabel 4100 2400 0    50   Input ~ 0

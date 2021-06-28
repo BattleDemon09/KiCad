@@ -3,14 +3,14 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 24 28
+Sheet 24 29
 Title "Relay Circuit"
-Date "2020-02-29"
-Rev "1"
+Date "2021-06-28"
+Rev "2"
 Comp "UOW Motorsport"
 Comment1 ""
 Comment2 ""
-Comment3 "Brandon Shaw"
+Comment3 "Brandon Shaw, Joshua Smedley"
 Comment4 "Design By:"
 $EndDescr
 $Comp
