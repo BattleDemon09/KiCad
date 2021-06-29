@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 29
+Sheet 5 30
 Title "Fuses"
 Date "2021-06-28"
 Rev "2"

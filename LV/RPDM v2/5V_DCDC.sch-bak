@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 29
+Sheet 4 30
 Title ""
 Date "2021-06-28"
 Rev "2"
@@ -37,24 +37,10 @@ AR Path="/5E553FD7/61024FAA" Ref="C?"  Part="1"
 AR Path="/5E553FD7/6101A8C0/61024FAA" Ref="C?"  Part="1" 
 AR Path="/5E553FD7/61027E0C/61024FAA" Ref="C?"  Part="1" 
 F 0 "C?" H 5315 3646 50  0000 L CNN
-F 1 "C" H 5315 3555 50  0000 L CNN
+F 1 "22µF" H 5315 3555 50  0000 L CNN
 F 2 "" H 5238 3450 50  0001 C CNN
 F 3 "~" H 5200 3600 50  0001 C CNN
 	1    5200 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 61024FB0
-P 6100 3600
-AR Path="/5E553FD7/61024FB0" Ref="C?"  Part="1" 
-AR Path="/5E553FD7/6101A8C0/61024FB0" Ref="C?"  Part="1" 
-AR Path="/5E553FD7/61027E0C/61024FB0" Ref="C?"  Part="1" 
-F 0 "C?" H 6215 3646 50  0000 L CNN
-F 1 "C" H 6215 3555 50  0000 L CNN
-F 2 "" H 6138 3450 50  0001 C CNN
-F 3 "~" H 6100 3600 50  0001 C CNN
-	1    6100 3600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -73,57 +59,17 @@ F 3 "" H 5650 3850 50  0001 C CNN
 $EndComp
 Text HLabel 6750 3400 2    50   Output ~ 0
 5V_OUT
-$Comp
-L Device:CP C?
-U 1 1 61024FBD
-P 6450 3600
-AR Path="/5E553FD7/61024FBD" Ref="C?"  Part="1" 
-AR Path="/5E553FD7/6101A8C0/61024FBD" Ref="C?"  Part="1" 
-AR Path="/5E553FD7/61027E0C/61024FBD" Ref="C?"  Part="1" 
-F 0 "C?" H 6568 3646 50  0000 L CNN
-F 1 "CP" H 6568 3555 50  0000 L CNN
-F 2 "" H 6488 3450 50  0001 C CNN
-F 3 "~" H 6450 3600 50  0001 C CNN
-	1    6450 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C?
-U 1 1 61024FC3
-P 4850 3600
-AR Path="/5E553FD7/61024FC3" Ref="C?"  Part="1" 
-AR Path="/5E553FD7/6101A8C0/61024FC3" Ref="C?"  Part="1" 
-AR Path="/5E553FD7/61027E0C/61024FC3" Ref="C?"  Part="1" 
-F 0 "C?" H 4968 3646 50  0000 L CNN
-F 1 "CP" H 4968 3555 50  0000 L CNN
-F 2 "" H 4888 3450 50  0001 C CNN
-F 3 "~" H 4850 3600 50  0001 C CNN
-	1    4850 3600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5950 3400 6100 3400
 Wire Wire Line
-	6450 3400 6450 3450
-Wire Wire Line
 	6100 3450 6100 3400
 Connection ~ 6100 3400
-Wire Wire Line
-	6100 3400 6450 3400
 Wire Wire Line
 	5650 3700 5650 3800
 Wire Wire Line
 	5650 3800 6100 3800
 Wire Wire Line
 	6100 3800 6100 3750
-Wire Wire Line
-	6100 3800 6450 3800
-Wire Wire Line
-	6450 3800 6450 3750
-Connection ~ 6100 3800
-Wire Wire Line
-	6450 3400 6750 3400
-Connection ~ 6450 3400
 Wire Wire Line
 	5350 3400 5200 3400
 Wire Wire Line
@@ -133,15 +79,6 @@ Wire Wire Line
 Wire Wire Line
 	5200 3800 5650 3800
 Connection ~ 5650 3800
-Wire Wire Line
-	4850 3750 4850 3800
-Wire Wire Line
-	4850 3800 5200 3800
-Connection ~ 5200 3800
-Wire Wire Line
-	5200 3400 4850 3400
-Wire Wire Line
-	4850 3400 4850 3450
 Connection ~ 5200 3400
 Wire Wire Line
 	5650 3800 5650 3850
@@ -159,6 +96,25 @@ $EndComp
 Wire Wire Line
 	4000 3400 4200 3400
 Wire Wire Line
-	4500 3400 4850 3400
-Connection ~ 4850 3400
+	4500 3400 5200 3400
+Wire Wire Line
+	6100 3400 6750 3400
+$Comp
+L Device:C C?
+U 1 1 61BA18F7
+P 6100 3600
+AR Path="/5E553FD7/61BA18F7" Ref="C?"  Part="1" 
+AR Path="/5E553FD7/6101A8C0/61BA18F7" Ref="C?"  Part="1" 
+AR Path="/5E553FD7/61027E0C/61BA18F7" Ref="C?"  Part="1" 
+F 0 "C?" H 6215 3646 50  0000 L CNN
+F 1 "22µF" H 6215 3555 50  0000 L CNN
+F 2 "" H 6138 3450 50  0001 C CNN
+F 3 "~" H 6100 3600 50  0001 C CNN
+	1    6100 3600
+	1    0    0    -1  
+$EndComp
+Text Notes 4600 3950 0    50   ~ 0
+Spec. range 10-22 µF
+Text Notes 6050 3950 0    50   ~ 0
+Spec. range 10-47 µF
 $EndSCHEMATC
