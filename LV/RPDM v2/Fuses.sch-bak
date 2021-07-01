@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 30
+Sheet 3 30
 Title "Fuses"
 Date "2021-06-28"
 Rev "2"
@@ -301,41 +301,7 @@ Wire Wire Line
 	6000 4000 6150 4000
 Wire Wire Line
 	6000 4500 6150 4500
-$Sheet
-S 6150 4850 900  300 
-U 60E9D8D5
-F0 "sheet60E9D8D5" 50
-F1 "Fuse.sch" 50
-F2 "Power_In" I L 6150 5000 50 
-F3 "Fuse_Out" O R 7050 5000 50 
-$EndSheet
-$Sheet
-S 6150 5350 900  300 
-U 60E9D8D9
-F0 "sheet60E9D8D9" 50
-F1 "Fuse.sch" 50
-F2 "Power_In" I L 6150 5500 50 
-F3 "Fuse_Out" O R 7050 5500 50 
-$EndSheet
-Text HLabel 7150 5000 2    50   Output ~ 0
-Fuse_Out18
-Wire Wire Line
-	7050 5000 7150 5000
-Text HLabel 7150 5500 2    50   Output ~ 0
-Fuse_Out19
-Wire Wire Line
-	7050 5500 7150 5500
-Wire Wire Line
-	6000 5000 6150 5000
-Wire Wire Line
-	6000 5500 6150 5500
 Connection ~ 6000 4000
 Wire Wire Line
 	6000 4000 6000 4500
-Connection ~ 6000 4500
-Connection ~ 6000 5000
-Wire Wire Line
-	6000 5000 6000 4500
-Wire Wire Line
-	6000 5500 6000 5000
 $EndSCHEMATC

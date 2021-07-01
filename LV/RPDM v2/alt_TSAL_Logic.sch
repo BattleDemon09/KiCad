@@ -1,0 +1,213 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 30 30
+Title "TSAL Circuit"
+Date "2021-06-28"
+Rev "2"
+Comp "UOW Motorsport"
+Comment1 ""
+Comment2 ""
+Comment3 "Brandon Shaw, Joshua Smedley"
+Comment4 "Design By:"
+$EndDescr
+Wire Wire Line
+	5150 2800 5250 2800
+Text HLabel 5250 2800 2    50   Output ~ 0
+Green_Out
+Text HLabel 3500 2500 0    50   Input ~ 0
+TSAT_Trigger
+Text HLabel 3500 2200 0    50   Input ~ 0
+Vin
+$Comp
+L 74xGxx:74AHC1G14 U?
+U 1 1 6106CE7B
+P 4250 3500
+F 0 "U?" H 4300 3575 50  0000 C CNN
+F 1 "74AHC1G14" H 4475 3425 50  0000 C CNN
+F 2 "" H 4250 3500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 4250 3500 50  0001 C CNN
+	1    4250 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2200 4250 2200
+Wire Wire Line
+	4250 2700 4250 2800
+Wire Wire Line
+	4850 2800 4250 2800
+Wire Wire Line
+	4250 2200 4250 2300
+$Comp
+L Device2:Q_PMOS_SGD Q?
+U 1 1 6109391B
+P 4150 2500
+F 0 "Q?" H 4355 2454 50  0000 L CNN
+F 1 "Q_PMOS_SGD" H 4355 2545 50  0000 L CNN
+F 2 "" H 4350 2600 50  0001 C CNN
+F 3 "~" H 4150 2500 50  0001 C CNN
+	1    4150 2500
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61075BDE
+P 3450 3300
+AR Path="/5E553DA0/61075BDE" Ref="R?"  Part="1" 
+AR Path="/6106042D/61075BDE" Ref="R?"  Part="1" 
+F 0 "R?" H 3520 3346 50  0000 L CNN
+F 1 "180k" H 3520 3255 50  0000 L CNN
+F 2 "" V 3380 3300 50  0001 C CNN
+F 3 "~" H 3450 3300 50  0001 C CNN
+	1    3450 3300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3500 3450 3500
+Wire Wire Line
+	3900 2500 3950 2500
+Wire Wire Line
+	3600 2500 3500 2500
+$Comp
+L power:GND #PWR02603
+U 1 1 5E7D702C
+P 3450 4200
+AR Path="/5E553DA0/5E7D702C" Ref="#PWR02603"  Part="1" 
+AR Path="/6106042D/5E7D702C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3450 3950 50  0001 C CNN
+F 1 "GND" H 3455 4027 50  0000 C CNN
+F 2 "" H 3450 4200 50  0001 C CNN
+F 3 "" H 3450 4200 50  0001 C CNN
+	1    3450 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3550 3450 3500
+Wire Wire Line
+	3450 3850 3450 4200
+Wire Wire Line
+	4250 3300 4250 3400
+Text HLabel 4000 3300 0    50   Input ~ 0
+Vin
+Wire Wire Line
+	4000 3300 4250 3300
+Wire Wire Line
+	4500 3500 4550 3500
+Wire Wire Line
+	3450 3150 3450 3100
+Wire Wire Line
+	3450 3100 4550 3100
+Wire Wire Line
+	4550 3100 4550 3500
+Connection ~ 4550 3500
+Wire Wire Line
+	3450 3450 3450 3500
+Connection ~ 3450 3500
+$Comp
+L Device:C C?
+U 1 1 61066862
+P 3450 3700
+AR Path="/5E553DA0/61066862" Ref="C?"  Part="1" 
+AR Path="/6106042D/61066862" Ref="C?"  Part="1" 
+F 0 "C?" H 3565 3746 50  0000 L CNN
+F 1 "1uF" H 3565 3655 50  0000 L CNN
+F 2 "" H 3488 3550 50  0001 C CNN
+F 3 "~" H 3450 3700 50  0001 C CNN
+	1    3450 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6108A962
+P 5000 2800
+AR Path="/5E553DA0/6108A962" Ref="R?"  Part="1" 
+AR Path="/6106042D/6108A962" Ref="R?"  Part="1" 
+F 0 "R?" V 4900 2800 50  0000 C CNN
+F 1 "10k" V 5100 2800 50  0000 C CNN
+F 2 "" V 4930 2800 50  0001 C CNN
+F 3 "~" H 5000 2800 50  0001 C CNN
+	1    5000 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 610AD83E
+P 3750 2500
+AR Path="/5E553DA0/610AD83E" Ref="R?"  Part="1" 
+AR Path="/6106042D/610AD83E" Ref="R?"  Part="1" 
+F 0 "R?" V 3850 2500 50  0000 C CNN
+F 1 "10k" V 3650 2500 50  0000 C CNN
+F 2 "" V 3680 2500 50  0001 C CNN
+F 3 "~" H 3750 2500 50  0001 C CNN
+	1    3750 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4550 3500 4850 3500
+Wire Wire Line
+	5250 3500 5150 3500
+Text HLabel 5250 3500 2    50   Output ~ 0
+Red_Out
+Text HLabel 2850 4000 0    50   Input ~ 0
+TSAT_Trigger
+$Comp
+L power:GND #PWR?
+U 1 1 61070854
+P 4250 4200
+AR Path="/5E553DA0/61070854" Ref="#PWR?"  Part="1" 
+AR Path="/6106042D/61070854" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4250 3950 50  0001 C CNN
+F 1 "GND" H 4255 4027 50  0000 C CNN
+F 2 "" H 4250 4200 50  0001 C CNN
+F 3 "" H 4250 4200 50  0001 C CNN
+	1    4250 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4000 3600 4000
+$Comp
+L Device:R R?
+U 1 1 61096A56
+P 3750 4000
+AR Path="/5E553DA0/61096A56" Ref="R?"  Part="1" 
+AR Path="/6106042D/61096A56" Ref="R?"  Part="1" 
+F 0 "R?" V 3543 4000 50  0000 C CNN
+F 1 "10" V 3634 4000 50  0000 C CNN
+F 2 "" V 3680 4000 50  0001 C CNN
+F 3 "~" H 3750 4000 50  0001 C CNN
+	1    3750 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 4000 3950 4000
+$Comp
+L Device2:Q_NMOS_DGS Q?
+U 1 1 61092310
+P 4150 4000
+F 0 "Q?" H 4354 4046 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 4354 3955 50  0000 L CNN
+F 2 "" H 4350 4100 50  0001 C CNN
+F 3 "~" H 4150 4000 50  0001 C CNN
+	1    4150 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3600 4250 3800
+Text Notes 2550 3600 0    50   ~ 0
+Frequency appox. 3Hz
+$Comp
+L Device:R R2606
+U 1 1 5E7ED9B4
+P 5000 3500
+AR Path="/5E553DA0/5E7ED9B4" Ref="R2606"  Part="1" 
+AR Path="/6106042D/5E7ED9B4" Ref="R?"  Part="1" 
+F 0 "R?" V 4793 3500 50  0000 C CNN
+F 1 "10k" V 4884 3500 50  0000 C CNN
+F 2 "" V 4930 3500 50  0001 C CNN
+F 3 "~" H 5000 3500 50  0001 C CNN
+	1    5000 3500
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
