@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 30
+Sheet 1 29
 Title "Rear Power Distribution Module"
 Date "2021-06-28"
 Rev "2"
@@ -14,853 +14,768 @@ Comment3 "Brandon Shaw, Joshua Smedley"
 Comment4 "Design By:"
 $EndDescr
 $Sheet
-S 4100 3050 800  200 
+S 1500 4650 1000 200 
 U 5E553FD7
 F0 "5V" 50
 F1 "5V_DCDC.sch" 50
-F2 "12V_IN" I R 4900 3150 50 
-F3 "5V_OUT" O L 4100 3150 50 
+F2 "12V_IN" I L 1500 4750 50 
+F3 "5V_OUT" O R 2500 4750 50 
 $EndSheet
 $Sheet
-S 5100 1100 1000 2200
+S 1500 1550 1000 2200
 U 5E553C05
 F0 "Fuse Blocks" 50
 F1 "Fuses.sch" 50
-F2 "Fuse_Out1" O R 6100 1200 50 
-F3 "Fuse_Out2" O R 6100 1300 50 
-F4 "Fuse_Out3" O R 6100 1400 50 
-F5 "Fuse_Out4" O R 6100 1500 50 
-F6 "Fuse_Out5" O R 6100 1600 50 
-F7 "Fuse_Out6" O R 6100 1700 50 
-F8 "Fuse_Out7" O R 6100 1800 50 
-F9 "Fuse_Out8" O R 6100 1900 50 
-F10 "Fuse_Out11" O R 6100 2200 50 
-F11 "Fuse_Out12" O R 6100 2400 50 
-F12 "Fuse_Out9" O R 6100 2000 50 
-F13 "Fuse_Out10" O R 6100 2100 50 
-F14 "Fuse_Out13" O R 6100 2500 50 
-F15 "Fuse_Out14" O R 6100 2600 50 
-F16 "Vin" I L 5100 3150 50 
-F17 "Fuse_Out15" O R 6100 2700 50 
-F18 "Fuse_Out16" O R 6100 3000 50 
-F19 "Fuse_Out17" O R 6100 3100 50 
+F2 "Fuse_Out1" O R 2500 1650 50 
+F3 "Fuse_Out2" O R 2500 1750 50 
+F4 "Fuse_Out3" O R 2500 1850 50 
+F5 "Fuse_Out4" O R 2500 1950 50 
+F6 "Fuse_Out5" O R 2500 2050 50 
+F7 "Fuse_Out6" O R 2500 2150 50 
+F8 "Fuse_Out7" O R 2500 2250 50 
+F9 "Fuse_Out8" O R 2500 2350 50 
+F10 "Fuse_Out11" O R 2500 2650 50 
+F11 "Fuse_Out12" O R 2500 2850 50 
+F12 "Fuse_Out9" O R 2500 2450 50 
+F13 "Fuse_Out10" O R 2500 2550 50 
+F14 "Fuse_Out13" O R 2500 2950 50 
+F15 "Fuse_Out14" O R 2500 3050 50 
+F16 "Vin" I L 1500 3600 50 
+F17 "Fuse_Out15" O R 2500 3150 50 
+F18 "Fuse_Out16" O R 2500 3450 50 
+F19 "Fuse_Out17" O R 2500 3550 50 
 $EndSheet
 Wire Wire Line
-	6100 2700 6200 2700
+	2500 3150 2600 3150
 Wire Wire Line
-	6200 2600 6100 2600
+	2600 3050 2500 3050
 $Sheet
-S 6200 2300 1000 1900
+S 4100 2750 1000 1300
 U 5E554D5D
 F0 "Relays" 50
 F1 "Relays.sch" 50
-F2 "Trigger1" I R 7200 3200 50 
-F3 "Trigger2" I R 7200 3300 50 
-F4 "Relay_Out1" O R 7200 2400 50 
-F5 "Relay_Out2" O R 7200 2500 50 
-F6 "Trigger3" I R 7200 3400 50 
-F7 "Relay_Out3" O R 7200 2700 50 
-F8 "Trigger4" I R 7200 3500 50 
-F9 "Relay_Out4" O R 7200 2800 50 
-F10 "Vin_1" I L 6200 2400 50 
-F11 "Vin_2" I L 6200 2500 50 
-F12 "Vin_3" I L 6200 2600 50 
-F13 "Vin_4" I L 6200 2700 50 
+F2 "Trigger1" I R 5100 3650 50 
+F3 "Trigger2" I R 5100 3750 50 
+F4 "Relay_Out1" O R 5100 2850 50 
+F5 "Relay_Out2" O R 5100 2950 50 
+F6 "Trigger3" I R 5100 3850 50 
+F7 "Relay_Out3" O R 5100 3150 50 
+F8 "Trigger4" I R 5100 3950 50 
+F9 "Relay_Out4" O R 5100 3250 50 
+F10 "Vin_1" I L 4100 2850 50 
+F11 "Vin_2" I L 4100 2950 50 
+F12 "Vin_3" I L 4100 3050 50 
+F13 "Vin_4" I L 4100 3150 50 
 $EndSheet
-Text Label 10200 2300 2    50   ~ 0
+Text Label 9400 2700 2    50   ~ 0
 RAD_FAN_1
-Text Label 10200 2400 2    50   ~ 0
+Text Label 9400 2800 2    50   ~ 0
 RAD_FAN_2
-Text Label 10200 2500 2    50   ~ 0
+Text Label 9400 2900 2    50   ~ 0
 PUMP_1
-Text Label 10200 2600 2    50   ~ 0
+Text Label 9400 3000 2    50   ~ 0
 PUMP_2
-Text Label 10200 2700 2    50   ~ 0
+Text Label 9400 3100 2    50   ~ 0
 SPARE_RELAY_1
-Text Label 10200 2800 2    50   ~ 0
+Text Label 9400 3200 2    50   ~ 0
 SPARE_RELAY_2
-Text Label 10200 1200 2    50   ~ 0
+Text Label 9400 1600 2    50   ~ 0
 ACC_FAN_1
-Text Label 10200 1300 2    50   ~ 0
+Text Label 9400 1700 2    50   ~ 0
 ACC_FAN_2
-Text Label 10200 1400 2    50   ~ 0
+Text Label 9400 1800 2    50   ~ 0
 ACC_FAN_3
-Text Label 10200 1500 2    50   ~ 0
+Text Label 9400 1900 2    50   ~ 0
 ACCUMULATOR
-Text Label 10200 1600 2    50   ~ 0
+Text Label 9400 2000 2    50   ~ 0
 BMS_DATALOGGER
-Text Label 10200 1700 2    50   ~ 0
+Text Label 9400 2100 2    50   ~ 0
 FPDM
-Text Label 10200 1800 2    50   ~ 0
+Text Label 9400 2200 2    50   ~ 0
 HV_DIST
-Text Label 10200 1900 2    50   ~ 0
+Text Label 9400 2300 2    50   ~ 0
 INTERLOCK
-Text Label 10200 2000 2    50   ~ 0
+Text Label 9400 2400 2    50   ~ 0
 MOTOR_CONTROLLER_1
-Text Label 10200 2100 2    50   ~ 0
+Text Label 9400 2500 2    50   ~ 0
 MOTOR_CONTROLLER_2
-Text Label 10200 2200 2    50   ~ 0
+Text Label 9400 2600 2    50   ~ 0
 TSAL
 Wire Wire Line
-	7300 2300 7300 2400
+	5200 2750 5200 2850
 Wire Wire Line
-	7300 2500 7300 2600
+	5200 2950 5200 3050
 Wire Wire Line
-	7300 2400 7200 2400
+	5200 2850 5100 2850
 Wire Wire Line
-	7200 2500 7300 2500
+	5100 2950 5200 2950
 Wire Wire Line
-	6100 2400 6200 2400
+	2500 2850 2600 2850
 Wire Wire Line
-	6100 2500 6200 2500
-Text Label 8300 2900 2    50   ~ 0
+	2500 2950 2600 2950
+Text Label 5850 3350 2    50   ~ 0
 5V
-Text Label 8300 3000 2    50   ~ 0
+Text Label 5850 3450 2    50   ~ 0
 BRAKE_LIGHT
-Text Label 8300 3100 2    50   ~ 0
+Text Label 5850 3550 2    50   ~ 0
 PDOC_12V
-Text Label 8300 3200 2    50   ~ 0
+Text Label 5850 3650 2    50   ~ 0
 RAD_FAN_Trigger
-Text Label 8300 3300 2    50   ~ 0
+Text Label 5850 3750 2    50   ~ 0
 PUMP_1_Trigger
-Text Label 8300 3400 2    50   ~ 0
+Text Label 5850 3850 2    50   ~ 0
 SPARE_Trigger_1
-Text Label 8300 3500 2    50   ~ 0
+Text Label 5850 3950 2    50   ~ 0
 SPARE_Trigger_2
-Text Label 8300 3800 2    50   ~ 0
+Text Label 5850 4250 2    50   ~ 0
 TSAT_Trigger
-Text Label 8300 3700 2    50   ~ 0
+Text Label 5850 4150 2    50   ~ 0
 TSAL_Green
-Text Label 8300 3600 2    50   ~ 0
+Text Label 5850 4050 2    50   ~ 0
 TSAL_Red
-Text Label 10200 4000 2    50   ~ 0
+Text Label 9400 4400 2    50   ~ 0
 RAD_FAN_1_GND
-Text Label 10200 4100 2    50   ~ 0
+Text Label 9400 4500 2    50   ~ 0
 RAD_FAN_2_GND
-Text Label 10200 4200 2    50   ~ 0
+Text Label 9400 4600 2    50   ~ 0
 PUMP_1_GND
-Text Label 10200 4300 2    50   ~ 0
+Text Label 9400 4700 2    50   ~ 0
 PUMP_2_GND
-Text Label 10200 4400 2    50   ~ 0
+Text Label 9400 4800 2    50   ~ 0
 SPARE_RELAY_1_GND
-Text Label 10200 4500 2    50   ~ 0
+Text Label 9400 4900 2    50   ~ 0
 SPARE_RELAY_2_GND
-Text Label 10200 2900 2    50   ~ 0
+Text Label 9400 3300 2    50   ~ 0
 ACC_FAN_1_GND
-Text Label 10200 3000 2    50   ~ 0
+Text Label 9400 3400 2    50   ~ 0
 ACC_FAN_2_GND
-Text Label 10200 3100 2    50   ~ 0
+Text Label 9400 3500 2    50   ~ 0
 ACC_FAN_3_GND
-Text Label 10200 3200 2    50   ~ 0
+Text Label 9400 3600 2    50   ~ 0
 ACCUMULATOR_GND
-Text Label 10200 3300 2    50   ~ 0
+Text Label 9400 3700 2    50   ~ 0
 BMS_DATALOGGER_GND
-Text Label 10200 3400 2    50   ~ 0
+Text Label 9400 3800 2    50   ~ 0
 FPDM_GND
-Text Label 10200 3500 2    50   ~ 0
+Text Label 9400 3900 2    50   ~ 0
 HV_DIST_GND
-Text Label 10200 3600 2    50   ~ 0
+Text Label 9400 4000 2    50   ~ 0
 INTERLOCK_GND
-Text Label 10200 3700 2    50   ~ 0
+Text Label 9400 4100 2    50   ~ 0
 MOTOR_CONTROLLER_1_GND
-Text Label 10200 3800 2    50   ~ 0
+Text Label 9400 4200 2    50   ~ 0
 MOTOR_CONTROLLER_2_GND
-Text Label 10200 3900 2    50   ~ 0
+Text Label 9400 4300 2    50   ~ 0
 TSAL_GND
-Text Label 8300 4100 2    50   ~ 0
-5V_GND
-Text Label 8300 4200 2    50   ~ 0
-INTERLOCK_BUTTONS_GND
 Wire Wire Line
-	9100 3600 9100 3500
-Connection ~ 9100 3600
-Wire Wire Line
-	9100 3500 9100 3400
-Connection ~ 9100 3500
-Wire Wire Line
-	9100 3400 9100 3300
-Connection ~ 9100 3400
-Wire Wire Line
-	9100 3300 9100 3200
-Connection ~ 9100 3300
-Wire Wire Line
-	9100 3200 9100 3100
-Connection ~ 9100 3200
-Wire Wire Line
-	9100 3100 9100 3000
-Connection ~ 9100 3100
-Wire Wire Line
-	9100 3000 9100 2900
-Connection ~ 9100 3000
-Connection ~ 9100 3700
-Wire Wire Line
-	9100 3700 9100 3600
-Wire Wire Line
-	9100 4500 9100 4400
-Connection ~ 9100 4500
-Wire Wire Line
-	9100 4400 9100 4300
-Connection ~ 9100 4400
-Wire Wire Line
-	9100 4300 9100 4200
-Connection ~ 9100 4300
-Wire Wire Line
-	9100 4200 9100 4100
-Connection ~ 9100 4200
-Wire Wire Line
-	9100 4100 9100 4000
-Connection ~ 9100 4100
-Wire Wire Line
-	9100 4000 9100 3900
-Connection ~ 9100 4000
-Wire Wire Line
-	9100 3900 9100 3800
-Connection ~ 9100 3900
-Wire Wire Line
-	9100 3800 9100 3700
-Connection ~ 9100 3800
-Wire Wire Line
-	10300 4500 9100 4500
-Wire Wire Line
-	8400 4100 7200 4100
-Wire Wire Line
-	8400 4200 7200 4200
-Wire Wire Line
-	10300 4100 9100 4100
-Wire Wire Line
-	10300 4300 9100 4300
-Wire Wire Line
-	10300 3700 9100 3700
-Wire Wire Line
-	10300 4200 9100 4200
-Wire Wire Line
-	10300 3200 9100 3200
-Wire Wire Line
-	10300 3100 9100 3100
-Wire Wire Line
-	10300 3000 9100 3000
-Wire Wire Line
-	10300 2900 9100 2900
-Wire Wire Line
-	10300 3800 9100 3800
-Wire Wire Line
-	10300 3900 9100 3900
-Wire Wire Line
-	10300 4000 9100 4000
-Wire Wire Line
-	10300 4400 9100 4400
-Wire Wire Line
-	10300 3300 9100 3300
-Wire Wire Line
-	10300 3400 9100 3400
-Wire Wire Line
-	10300 3500 9100 3500
-Wire Wire Line
-	10300 3600 9100 3600
-$Comp
-L power:GND #PWR0102
-U 1 1 618F7155
-P 9100 4900
-F 0 "#PWR0102" H 9100 4650 50  0001 C CNN
-F 1 "GND" H 9105 4727 50  0000 C CNN
-F 2 "" H 9100 4900 50  0001 C CNN
-F 3 "" H 9100 4900 50  0001 C CNN
-	1    9100 4900
-	-1   0    0    -1  
-$EndComp
-Text Label 8300 3900 2    50   ~ 0
+	6950 3450 7000 3450
+Text Label 5850 4350 2    50   ~ 0
 BATT_V
-Text Label 8300 4000 2    50   ~ 0
+Text Label 5850 4450 2    50   ~ 0
 BATT_I
 Wire Wire Line
-	5100 3150 5000 3150
+	1500 3600 1400 3600
 Wire Wire Line
-	4900 3600 5000 3600
+	1400 3600 1400 4100
 Wire Wire Line
-	5000 3150 5000 3600
-Connection ~ 5000 3150
+	1400 4750 1500 4750
+Connection ~ 1400 4100
 Wire Wire Line
-	5000 3150 4900 3150
-Connection ~ 5000 3600
+	1400 4100 1500 4100
 Wire Wire Line
-	5000 3600 5100 3600
-Wire Wire Line
-	4000 2900 4000 3150
-Wire Wire Line
-	4000 3150 4100 3150
-Wire Wire Line
-	4000 3150 3900 3150
-Connection ~ 4000 3150
-Wire Wire Line
-	3900 3600 4100 3600
+	2500 4750 2600 4750
 $Comp
 L power:GND #PWR0101
 U 1 1 5E5439F4
-P 1300 3900
-F 0 "#PWR0101" H 1300 3650 50  0001 C CNN
-F 1 "GND" H 1300 3775 50  0000 C CNN
-F 2 "" H 1300 3900 50  0001 C CNN
-F 3 "" H 1300 3900 50  0001 C CNN
-	1    1300 3900
+P 1550 6700
+F 0 "#PWR0101" H 1550 6450 50  0001 C CNN
+F 1 "GND" H 1550 6575 50  0000 C CNN
+F 2 "" H 1550 6700 50  0001 C CNN
+F 3 "" H 1550 6700 50  0001 C CNN
+	1    1550 6700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:TestPoint TP101
 U 1 1 5E7DA965
-P 1300 3400
-F 0 "TP101" H 1300 3600 50  0000 C CNN
-F 1 "GND Test Point" H 1300 3600 50  0001 C CNN
-F 2 "" H 1500 3400 50  0001 C CNN
-F 3 "~" H 1500 3400 50  0001 C CNN
-	1    1300 3400
+P 1550 6200
+F 0 "TP101" H 1550 6400 50  0000 C CNN
+F 1 "GND Test Point" H 1550 6400 50  0001 C CNN
+F 2 "" H 1750 6200 50  0001 C CNN
+F 3 "~" H 1750 6200 50  0001 C CNN
+	1    1550 6200
 	1    0    0    -1  
 $EndComp
-Text Label 850  3600 0    50   ~ 0
+Text Label 1100 6400 0    50   ~ 0
 +24V_BATT
-Text Label 850  3800 0    50   ~ 0
+Text Label 1100 6600 0    50   ~ 0
 -24V
 Wire Wire Line
-	1300 3400 1300 3800
+	1550 6200 1550 6600
 $Comp
 L Connector:TestPoint TP103
 U 1 1 61CC88E6
-P 1900 3400
-F 0 "TP103" H 1900 3600 50  0000 C CNN
-F 1 "GND Test Point" H 1900 3600 50  0001 C CNN
-F 2 "" H 2100 3400 50  0001 C CNN
-F 3 "~" H 2100 3400 50  0001 C CNN
-	1    1900 3400
+P 2150 6200
+F 0 "TP103" H 2150 6400 50  0000 C CNN
+F 1 "GND Test Point" H 2150 6400 50  0001 C CNN
+F 2 "" H 2350 6200 50  0001 C CNN
+F 3 "~" H 2350 6200 50  0001 C CNN
+	1    2150 6200
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 5100 3500 1000 700 
-U 5E553DA0
-F0 "TSAL_Logic" 50
-F1 "TSAL_Logic.sch" 50
-F2 "Red_Out" O R 6100 3600 50 
-F3 "Green_Out" O R 6100 3700 50 
-F4 "Vin" I L 5100 3600 50 
-F5 "TSAT_Trigger" I R 6100 3800 50 
-$EndSheet
-$Sheet
-S 3200 3050 700  1150
-U 61BFBFBE
-F0 "I/V sense" 50
-F1 "IVsense.sch" 50
-F2 "V_Monitor" O R 3900 3900 50 
-F3 "I_Monitor" O R 3900 4000 50 
-F4 "V_IN" I L 3200 3600 50 
-F5 "V_OUT" I R 3900 3600 50 
-F6 "5V_IN" I R 3900 3150 50 
-$EndSheet
-$Sheet
-S 2100 3500 750  300 
-U 60E91844
-F0 "ext. power switching" 50
-F1 "EXT_PWR_Sense.sch" 50
-F2 "EXT_IN" I L 2100 3700 50 
-F3 "BATT_IN" I L 2100 3600 50 
-F4 "V_OUT" O R 2850 3600 50 
-$EndSheet
-$Sheet
-S 4100 3500 800  200 
+S 5600 6300 800  200 
 U 5E545B2D
 F0 "DCDC" 50
 F1 "12V_DCDC.sch" 50
-F2 "24V_IN" I L 4100 3600 50 
-F3 "12V_OUT" O R 4900 3600 50 
+F2 "24V_IN" I L 5600 6400 50 
+F3 "12V_OUT" O R 6400 6400 50 
 $EndSheet
 Wire Wire Line
-	1900 3400 1900 3600
+	2150 6200 2150 6400
 $Comp
 L Connector_Generic:Conn_01x03 J101
 U 1 1 60EAFFB2
-P 650 3700
-F 0 "J101" H 568 4017 50  0000 C CNN
-F 1 "24V_IN" H 568 3926 50  0000 C CNN
-F 2 "" H 650 3700 50  0001 C CNN
-F 3 "~" H 650 3700 50  0001 C CNN
-	1    650  3700
+P 900 6500
+F 0 "J101" H 818 6817 50  0000 C CNN
+F 1 "24V_IN" H 818 6726 50  0000 C CNN
+F 2 "" H 900 6500 50  0001 C CNN
+F 3 "~" H 900 6500 50  0001 C CNN
+	1    900  6500
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	850  3600 1900 3600
-Connection ~ 1900 3600
-Text Label 850  3700 0    50   ~ 0
+	1100 6400 2150 6400
+Connection ~ 2150 6400
+Text Label 1100 6500 0    50   ~ 0
 +24V_EXT
 $Comp
 L Connector:TestPoint TP102
 U 1 1 60EC5F73
-P 1600 3400
-F 0 "TP102" H 1600 3600 50  0000 C CNN
-F 1 "GND Test Point" H 1600 3600 50  0001 C CNN
-F 2 "" H 1800 3400 50  0001 C CNN
-F 3 "~" H 1800 3400 50  0001 C CNN
-	1    1600 3400
+P 1850 6200
+F 0 "TP102" H 1850 6400 50  0000 C CNN
+F 1 "GND Test Point" H 1850 6400 50  0001 C CNN
+F 2 "" H 2050 6200 50  0001 C CNN
+F 3 "~" H 2050 6200 50  0001 C CNN
+	1    1850 6200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1900 3600 2100 3600
+	2150 6400 2500 6400
 Wire Wire Line
-	850  3700 1600 3700
+	1100 6500 1850 6500
 Wire Wire Line
-	1600 3400 1600 3700
-Connection ~ 1600 3700
+	1850 6200 1850 6500
+Connection ~ 1850 6500
 Wire Wire Line
-	1600 3700 2100 3700
+	1850 6500 2500 6500
 Wire Wire Line
-	1300 3800 850  3800
+	1550 6600 1100 6600
 Wire Wire Line
-	1300 3800 1300 3900
-Connection ~ 1300 3800
-Wire Wire Line
-	2850 3600 3200 3600
-$Comp
-L 776180-1:776180-1 J103
-U 1 1 60D7E30A
-P 8700 4500
-F 0 "J103" H 8750 6250 50  0000 R CNN
-F 1 "776180-1" H 8900 2550 50  0000 R CNN
-F 2 "TE_776180-1" H 8700 4500 50  0001 L BNN
-F 3 "" H 8700 4500 50  0001 L BNN
-F 4 "H7" H 8700 4500 50  0001 L BNN "PARTREV"
-F 5 "TE CONNECTIVITY" H 8700 4500 50  0001 L BNN "MANUFACTURER"
-F 6 "STANDARED RECOMENDATION" H 8700 4500 50  0001 L BNN "STANDARD"
-	1    8700 4500
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 4000 8400 4000
+	1550 6600 1550 6700
+Connection ~ 1550 6600
 $Comp
 L 776180-1:776180-1 J102
 U 1 1 60D74CCA
-P 10600 2800
-F 0 "J102" H 10650 4550 50  0000 R CNN
-F 1 "776180-1" H 10800 850 50  0000 R CNN
-F 2 "TE_776180-1" H 10600 2800 50  0001 L BNN
-F 3 "" H 10600 2800 50  0001 L BNN
-F 4 "H7" H 10600 2800 50  0001 L BNN "PARTREV"
-F 5 "TE CONNECTIVITY" H 10600 2800 50  0001 L BNN "MANUFACTURER"
-F 6 "STANDARED RECOMENDATION" H 10600 2800 50  0001 L BNN "STANDARD"
-	1    10600 2800
+P 9800 3200
+F 0 "J102" H 9850 4950 50  0000 R CNN
+F 1 "776180-1" H 10000 1250 50  0000 R CNN
+F 2 "TE_776180-1" H 9800 3200 50  0001 L BNN
+F 3 "" H 9800 3200 50  0001 L BNN
+F 4 "H7" H 9800 3200 50  0001 L BNN "PARTREV"
+F 5 "TE CONNECTIVITY" H 9800 3200 50  0001 L BNN "MANUFACTURER"
+F 6 "STANDARED RECOMENDATION" H 9800 3200 50  0001 L BNN "STANDARD"
+	1    9800 3200
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4000 2900 8400 2900
+	2500 3450 2600 3450
 Wire Wire Line
-	6100 3000 8400 3000
+	2500 3550 2600 3550
 Wire Wire Line
-	6100 3100 8400 3100
+	5100 3750 5950 3750
 Wire Wire Line
-	7200 3200 8400 3200
+	5100 3850 5950 3850
 Wire Wire Line
-	7200 3300 8400 3300
+	5100 3950 5950 3950
 Wire Wire Line
-	7200 3400 8400 3400
+	2500 4100 2600 4100
 Wire Wire Line
-	7200 3500 8400 3500
+	2500 4200 2600 4200
 Wire Wire Line
-	6100 3600 8400 3600
+	2500 4300 2600 4300
 Wire Wire Line
-	6100 3700 8400 3700
+	2500 1650 2600 1650
 Wire Wire Line
-	6100 3800 8400 3800
+	2500 1750 2600 1750
 Wire Wire Line
-	3900 3900 8400 3900
+	2500 1850 2600 1850
 Wire Wire Line
-	9100 4500 9100 4600
+	2500 1950 2600 1950
 Wire Wire Line
-	10300 4600 9100 4600
-Connection ~ 9100 4600
+	2500 2050 2600 2050
 Wire Wire Line
-	9100 4600 9100 4900
+	2500 2150 2600 2150
 Wire Wire Line
-	6100 1200 10300 1200
+	2500 2250 2600 2250
 Wire Wire Line
-	6100 1300 10300 1300
+	2500 2350 2600 2350
 Wire Wire Line
-	6100 1400 10300 1400
+	2500 2450 2600 2450
 Wire Wire Line
-	6100 1500 10300 1500
+	2500 2550 2600 2550
 Wire Wire Line
-	6100 1600 10300 1600
+	2500 2650 2600 2650
 Wire Wire Line
-	6100 1700 10300 1700
+	5200 2750 5300 2750
 Wire Wire Line
-	6100 1800 10300 1800
+	5200 2850 5300 2850
 Wire Wire Line
-	6100 1900 10300 1900
+	5200 2950 5300 2950
 Wire Wire Line
-	6100 2000 10300 2000
+	5200 3050 5300 3050
 Wire Wire Line
-	6100 2100 10300 2100
+	5100 3150 5300 3150
 Wire Wire Line
-	6100 2200 10300 2200
-Wire Wire Line
-	7300 2300 10300 2300
-Wire Wire Line
-	7300 2400 10300 2400
-Wire Wire Line
-	7300 2500 10300 2500
-Wire Wire Line
-	7300 2600 10300 2600
-Wire Wire Line
-	7200 2700 10300 2700
-Wire Wire Line
-	7200 2800 10300 2800
-Connection ~ 7300 2400
-Connection ~ 7300 2500
-Wire Notes Line
-	13050 1700 17100 1700
-Text Notes 16400 1650 0    50   ~ 0
-TSAL Flash Circuit
-Text Notes 13100 1850 0    50   ~ 0
-TSAT Trigger Logic
-Text Notes 16150 2650 0    50   ~ 0
-TSAL Logic Outputs
-Wire Wire Line
-	13700 2700 13650 2700
-$Comp
-L Device:R R?
-U 1 1 6105ADD3
-P 13850 2700
-AR Path="/5E553DA0/6105ADD3" Ref="R?"  Part="1" 
-AR Path="/6105ADD3" Ref="R?"  Part="1" 
-F 0 "R?" V 13643 2700 50  0000 C CNN
-F 1 "470" V 13734 2700 50  0000 C CNN
-F 2 "" V 13780 2700 50  0001 C CNN
-F 3 "~" H 13850 2700 50  0001 C CNN
-	1    13850 2700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	14050 3050 14050 3100
-Wire Wire Line
-	14050 2750 14050 2700
-Wire Wire Line
-	14050 3100 14800 3100
-Connection ~ 14800 3100
-Wire Wire Line
-	14800 2900 14800 3100
-Wire Wire Line
-	14800 3100 14800 3150
-$Comp
-L power:GND #PWR?
-U 1 1 6105ADDF
-P 14800 3150
-AR Path="/5E553DA0/6105ADDF" Ref="#PWR?"  Part="1" 
-AR Path="/6105ADDF" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 14800 2900 50  0001 C CNN
-F 1 "GND" H 14805 2977 50  0000 C CNN
-F 2 "" H 14800 3150 50  0001 C CNN
-F 3 "" H 14800 3150 50  0001 C CNN
-	1    14800 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 6105ADE5
-P 14050 2900
-AR Path="/5E553DA0/6105ADE5" Ref="C?"  Part="1" 
-AR Path="/6105ADE5" Ref="C?"  Part="1" 
-F 0 "C?" H 14165 2946 50  0000 L CNN
-F 1 "10uF" H 14165 2855 50  0000 L CNN
-F 2 "" H 14088 2750 50  0001 C CNN
-F 3 "~" H 14050 2900 50  0001 C CNN
-	1    14050 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14000 2700 14050 2700
-Connection ~ 14050 2700
-Wire Wire Line
-	14050 2700 14100 2700
-Wire Wire Line
-	14400 2700 14500 2700
-Text HLabel 16100 2200 2    50   Output ~ 0
-Red_Out
-Wire Wire Line
-	14800 2000 14800 2100
-Wire Wire Line
-	14800 2450 14800 2500
-Connection ~ 14800 2450
-Wire Wire Line
-	14800 2400 14800 2450
-$Comp
-L Device:R R?
-U 1 1 6105ADF4
-P 14800 2250
-AR Path="/5E553DA0/6105ADF4" Ref="R?"  Part="1" 
-AR Path="/6105ADF4" Ref="R?"  Part="1" 
-F 0 "R?" H 14870 2296 50  0000 L CNN
-F 1 "10k" H 14870 2205 50  0000 L CNN
-F 2 "" V 14730 2250 50  0001 C CNN
-F 3 "~" H 14800 2250 50  0001 C CNN
-	1    14800 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14800 2450 16100 2450
-Text Label 14800 2000 1    50   ~ 0
-+12V
-$Comp
-L Device:Q_NPN_BCE Q?
-U 1 1 6105ADFC
-P 14700 2700
-AR Path="/5E553DA0/6105ADFC" Ref="Q?"  Part="1" 
-AR Path="/6105ADFC" Ref="Q?"  Part="1" 
-F 0 "Q?" H 14891 2746 50  0000 L CNN
-F 1 "Q_NPN_BCE" H 14891 2655 50  0000 L CNN
-F 2 "" H 14900 2800 50  0001 C CNN
-F 3 "~" H 14700 2700 50  0001 C CNN
-	1    14700 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 6105AE02
-P 14250 2700
-AR Path="/5E553DA0/6105AE02" Ref="R?"  Part="1" 
-AR Path="/6105AE02" Ref="R?"  Part="1" 
-F 0 "R?" V 14043 2700 50  0000 C CNN
-F 1 "10k" V 14134 2700 50  0000 C CNN
-F 2 "" V 14180 2700 50  0001 C CNN
-F 3 "~" H 14250 2700 50  0001 C CNN
-	1    14250 2700
-	0    1    1    0   
-$EndComp
-Text Label 15650 2200 2    50   ~ 0
-555_Out
-Wire Wire Line
-	15750 2200 15650 2200
-Wire Wire Line
-	16050 2200 16100 2200
-$Comp
-L Device:R R?
-U 1 1 6105AE0B
-P 15900 2200
-AR Path="/5E553DA0/6105AE0B" Ref="R?"  Part="1" 
-AR Path="/6105AE0B" Ref="R?"  Part="1" 
-F 0 "R?" V 15693 2200 50  0000 C CNN
-F 1 "10k" V 15784 2200 50  0000 C CNN
-F 2 "" V 15830 2200 50  0001 C CNN
-F 3 "~" H 15900 2200 50  0001 C CNN
-	1    15900 2200
-	0    1    1    0   
-$EndComp
-Text HLabel 16100 2450 2    50   Output ~ 0
-Green_Out
-Text HLabel 13650 2700 0    50   Input ~ 0
-TSAT_Trigger
-Wire Wire Line
-	14050 2700 14050 2300
-Text Label 14050 2300 1    50   ~ 0
-555_Trigger
-$Comp
-L Device:C C?
-U 1 1 6105AE15
-P 14250 600
-AR Path="/5E553DA0/6105AE15" Ref="C?"  Part="1" 
-AR Path="/6105AE15" Ref="C?"  Part="1" 
-F 0 "C?" V 13998 600 50  0000 C CNN
-F 1 "10nF" V 14089 600 50  0000 C CNN
-F 2 "" H 14288 450 50  0001 C CNN
-F 3 "~" H 14250 600 50  0001 C CNN
-	1    14250 600 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	14400 600  14500 600 
-Wire Wire Line
-	14100 600  14050 600 
-$Comp
-L power:GND #PWR?
-U 1 1 6105AE1D
-P 14050 600
-AR Path="/5E553DA0/6105AE1D" Ref="#PWR?"  Part="1" 
-AR Path="/6105AE1D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 14050 350 50  0001 C CNN
-F 1 "GND" V 14055 472 50  0000 R CNN
-F 2 "" H 14050 600 50  0001 C CNN
-F 3 "" H 14050 600 50  0001 C CNN
-	1    14050 600 
-	0    1    1    0   
-$EndComp
-Text Label 14400 800  2    50   ~ 0
-555_Trigger
-Wire Wire Line
-	14450 800  14400 800 
-Text Label 15350 -100 1    50   ~ 0
-+12V
-Text Label 15600 400  0    50   ~ 0
-555_Out
-Wire Wire Line
-	15500 400  15600 400 
-Text Label 13700 0    0    50   ~ 0
-+12V
-Text HLabel 13500 0    0    50   Input ~ 0
-Vin
-Wire Wire Line
-	13500 0    13700 0   
-Wire Wire Line
-	15350 0    15350 -100
-Connection ~ 15350 0   
-Wire Wire Line
-	15000 0    15350 0   
-Wire Wire Line
-	15350 0    15950 0   
-Wire Wire Line
-	15000 200  15000 0   
-Wire Wire Line
-	15950 0    15950 50  
-Text Notes 13250 -150 0    50   ~ 0
-Power Distribution
-Text Notes 16950 1150 0    50   ~ 0
-Frequency Adjust, appox. 2.3-6.6Hz
-$Comp
-L Device:R R?
-U 1 1 6105AE33
-P 15950 200
-AR Path="/5E553DA0/6105AE33" Ref="R?"  Part="1" 
-AR Path="/6105AE33" Ref="R?"  Part="1" 
-F 0 "R?" H 16020 246 50  0000 L CNN
-F 1 "1.8k" H 16020 155 50  0000 L CNN
-F 2 "" V 15880 200 50  0001 C CNN
-F 3 "~" H 15950 200 50  0001 C CNN
-	1    15950 200 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15500 600  15950 600 
-Wire Wire Line
-	15950 350  15950 600 
-Connection ~ 15950 600 
-Wire Wire Line
-	15550 150  15550 800 
-Wire Wire Line
-	14450 150  15550 150 
-Connection ~ 14450 800 
-Wire Wire Line
-	14500 800  14450 800 
-Connection ~ 15550 800 
-Wire Wire Line
-	15550 800  15500 800 
-Wire Wire Line
-	14450 400  14450 150 
-Wire Wire Line
-	14500 400  14450 400 
-$Comp
-L Timer:LM555 U?
-U 1 1 6105AE44
-P 15000 600
-AR Path="/5E553DA0/6105AE44" Ref="U?"  Part="1" 
-AR Path="/6105AE44" Ref="U?"  Part="1" 
-F 0 "U?" H 14700 950 50  0000 C CNN
-F 1 "LM555" H 15250 950 50  0000 C CNN
-F 2 "" H 15000 600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 15000 600 50  0001 C CNN
-	1    15000 600 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15950 600  15950 650 
-$Comp
-L Device:R R?
-U 1 1 6105AE4B
-P 15950 800
-AR Path="/5E553DA0/6105AE4B" Ref="R?"  Part="1" 
-AR Path="/6105AE4B" Ref="R?"  Part="1" 
-F 0 "R?" H 16020 846 50  0000 L CNN
-F 1 "10k" H 16020 755 50  0000 L CNN
-F 2 "" V 15880 800 50  0001 C CNN
-F 3 "~" H 15950 800 50  0001 C CNN
-	1    15950 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6105AE51
-P 15000 1450
-AR Path="/5E553DA0/6105AE51" Ref="#PWR?"  Part="1" 
-AR Path="/6105AE51" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 15000 1200 50  0001 C CNN
-F 1 "GND" H 15005 1277 50  0000 C CNN
-F 2 "" H 15000 1450 50  0001 C CNN
-F 3 "" H 15000 1450 50  0001 C CNN
-	1    15000 1450
-	1    0    0    -1  
-$EndComp
-Connection ~ 15000 1400
-Wire Wire Line
-	15000 1400 15000 1450
-Wire Wire Line
-	15000 1000 15000 1400
-Wire Wire Line
-	14450 1400 15000 1400
-$Comp
-L Device:R R?
-U 1 1 6105AE5B
-P 14450 1100
-AR Path="/5E553DA0/6105AE5B" Ref="R?"  Part="1" 
-AR Path="/6105AE5B" Ref="R?"  Part="1" 
-F 0 "R?" H 14520 1146 50  0000 L CNN
-F 1 "10k" H 14520 1055 50  0000 L CNN
-F 2 "" V 14380 1100 50  0001 C CNN
-F 3 "~" H 14450 1100 50  0001 C CNN
-	1    14450 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14450 800  14450 950 
-Wire Wire Line
-	14450 1250 14450 1400
-$Comp
-L Device:C C?
-U 1 1 6105AE63
-P 15250 1400
-AR Path="/5E553DA0/6105AE63" Ref="C?"  Part="1" 
-AR Path="/6105AE63" Ref="C?"  Part="1" 
-F 0 "C?" V 15200 1450 50  0000 L CNN
-F 1 "10uF" V 15300 1450 50  0000 L CNN
-F 2 "" H 15288 1250 50  0001 C CNN
-F 3 "~" H 15250 1400 50  0001 C CNN
-	1    15250 1400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	15550 1400 15400 1400
-Wire Wire Line
-	15100 1400 15000 1400
-Wire Wire Line
-	15950 950  15950 1050
-Wire Wire Line
-	15800 1200 15550 1200
-Wire Wire Line
-	15550 800  15550 1200
-Wire Wire Line
-	15550 1200 15550 1400
-Connection ~ 15550 1200
-$Comp
-L Device2:R_Potentiometer_Trim RV?
-U 1 1 6105AE70
-P 15950 1200
-AR Path="/5E553DA0/6105AE70" Ref="RV?"  Part="1" 
-AR Path="/6105AE70" Ref="RV?"  Part="1" 
-F 0 "RV?" H 15880 1154 50  0000 R CNN
-F 1 "20kΩ" H 15880 1245 50  0000 R CNN
-F 2 "" H 15950 1200 50  0001 C CNN
-F 3 "~" H 15950 1200 50  0001 C CNN
-	1    15950 1200
-	-1   0    0    1   
-$EndComp
+	5100 3250 5300 3250
+Connection ~ 5200 2850
+Connection ~ 5200 2950
 $Sheet
-S 5000 5000 1000 700 
+S 1500 4000 1000 400 
 U 6106042D
-F0 "sheet61060427" 50
+F0 "alt TSAL Logic" 50
 F1 "alt_TSAL_Logic.sch" 50
-F2 "Red_Out" O R 6000 5100 50 
-F3 "Green_Out" O R 6000 5200 50 
-F4 "Vin" I L 5000 5100 50 
-F5 "TSAT_Trigger" I R 6000 5300 50 
+F2 "Red_Out" O R 2500 4100 50 
+F3 "Green_Out" O R 2500 4200 50 
+F4 "Vin" I L 1500 4100 50 
+F5 "TSAT_Trigger" I R 2500 4300 50 
 $EndSheet
+Wire Wire Line
+	9400 1600 9500 1600
+Wire Wire Line
+	9400 1700 9500 1700
+Wire Wire Line
+	9400 1800 9500 1800
+Wire Wire Line
+	9400 1900 9500 1900
+Wire Wire Line
+	9400 2000 9500 2000
+Wire Wire Line
+	9400 2100 9500 2100
+Wire Wire Line
+	9400 2200 9500 2200
+Wire Wire Line
+	9400 2300 9500 2300
+Wire Wire Line
+	9400 2400 9500 2400
+Wire Wire Line
+	9400 2500 9500 2500
+Wire Wire Line
+	9400 2600 9500 2600
+Wire Wire Line
+	9400 2700 9500 2700
+Wire Wire Line
+	9400 2800 9500 2800
+Wire Wire Line
+	9400 2900 9500 2900
+Wire Wire Line
+	9400 3000 9500 3000
+Wire Wire Line
+	9400 3100 9500 3100
+Wire Wire Line
+	9400 3200 9500 3200
+Text Label 5300 2750 0    50   ~ 0
+RAD_FAN_1
+Text Label 5300 2850 0    50   ~ 0
+RAD_FAN_2
+Text Label 5300 2950 0    50   ~ 0
+PUMP_1
+Text Label 5300 3050 0    50   ~ 0
+PUMP_2
+Text Label 5300 3150 0    50   ~ 0
+SPARE_RELAY_1
+Text Label 5300 3250 0    50   ~ 0
+SPARE_RELAY_2
+Text Label 2600 1650 0    50   ~ 0
+ACC_FAN_1
+Text Label 2600 1750 0    50   ~ 0
+ACC_FAN_2
+Text Label 2600 1850 0    50   ~ 0
+ACC_FAN_3
+Text Label 2600 1950 0    50   ~ 0
+ACCUMULATOR
+Text Label 2600 2050 0    50   ~ 0
+BMS_DATALOGGER
+Text Label 2600 2150 0    50   ~ 0
+FPDM
+Text Label 2600 2250 0    50   ~ 0
+HV_DIST
+Text Label 2600 2350 0    50   ~ 0
+INTERLOCK
+Text Label 2600 2450 0    50   ~ 0
+MOTOR_CONTROLLER_1
+Text Label 2600 2550 0    50   ~ 0
+MOTOR_CONTROLLER_2
+Text Label 2600 2650 0    50   ~ 0
+TSAL
+Text Label 2600 4750 0    50   ~ 0
+5V
+Wire Wire Line
+	5850 3350 5950 3350
+Wire Wire Line
+	5850 4350 5950 4350
+Wire Wire Line
+	5850 4450 5950 4450
+Wire Wire Line
+	5100 3650 5950 3650
+Wire Wire Line
+	1400 4750 1400 4100
+Wire Wire Line
+	6400 6400 6500 6400
+Text Label 6500 6400 0    50   ~ 0
+12V
+Text Label 1300 3600 2    70   ~ 0
+12V
+Wire Wire Line
+	1300 3600 1400 3600
+Connection ~ 1400 3600
+Text Notes 3450 5900 0    70   ~ 0
+Power Entry
+Wire Notes Line
+	800  5750 6750 5750
+Wire Notes Line
+	6750 5750 6750 7300
+Text Notes 5700 7200 0    50   ~ 0
+Convert to 12V
+Text Notes 3950 7200 0    50   ~ 0
+Measure Current/Voltage
+Text Notes 1600 7200 0    50   ~ 0
+GLV power in (18-25V)
+Wire Notes Line
+	5250 6000 5250 7250
+Wire Notes Line
+	3750 6000 3750 7250
+Wire Wire Line
+	5850 3550 5950 3550
+Wire Wire Line
+	5850 3450 5950 3450
+Text Label 2600 3450 0    50   ~ 0
+BRAKE_LIGHT
+Text Label 2600 3550 0    50   ~ 0
+PDOC_12V
+Wire Wire Line
+	5850 4050 5950 4050
+Wire Wire Line
+	5850 4150 5950 4150
+Wire Wire Line
+	5850 4250 5950 4250
+Text Label 2600 4300 0    50   ~ 0
+TSAT_Trigger
+Text Label 2600 4200 0    50   ~ 0
+TSAL_Green
+Text Label 2600 4100 0    50   ~ 0
+TSAL_Red
+Wire Wire Line
+	4850 6300 4750 6300
+Text Label 4850 6300 0    50   ~ 0
+5V
+Wire Wire Line
+	4750 6800 4850 6800
+Text Label 4850 6700 0    50   ~ 0
+BATT_V
+Text Label 4850 6800 0    50   ~ 0
+BATT_I
+Wire Wire Line
+	4750 6700 4850 6700
+$Sheet
+S 4050 6200 700  700 
+U 61BFBFBE
+F0 "I/V sense" 50
+F1 "IVsense.sch" 50
+F2 "V_Monitor" O R 4750 6700 50 
+F3 "I_Monitor" O R 4750 6800 50 
+F4 "V_IN" I L 4050 6400 50 
+F5 "V_OUT" I R 4750 6400 50 
+F6 "5V_IN" I R 4750 6300 50 
+$EndSheet
+Wire Wire Line
+	4750 6400 5600 6400
+Wire Wire Line
+	3550 6400 4050 6400
+$Sheet
+S 2500 6300 1050 300 
+U 60E91844
+F0 "ext. power switching" 50
+F1 "EXT_PWR_Sense.sch" 50
+F2 "EXT_IN" I L 2500 6500 50 
+F3 "BATT_IN" I L 2500 6400 50 
+F4 "V_OUT" O R 3550 6400 50 
+$EndSheet
+$Comp
+L 1-770669-1:1-770669-1 J?
+U 1 1 6139282B
+P 6450 3850
+F 0 "J?" H 6450 4617 50  0000 C CNN
+F 1 "1-770669-1" H 6450 4526 50  0000 C CNN
+F 2 "TE_1-770669-1" H 6450 3850 50  0001 L BNN
+F 3 "" H 6450 3850 50  0001 L BNN
+F 4 "TE Connectivity" H 6450 3850 50  0001 L BNN "MANUFACTURER"
+F 5 "" H 6450 3850 50  0001 L BNN "LATEST_REV_NOTE"
+F 6 "4mm" H 6450 3850 50  0001 L BNN "PITCH"
+F 7 "09, March 2016" H 6450 3850 50  0001 L BNN "LATEST_REV_DATE"
+F 8 "" H 6450 3850 50  0001 L BNN "SIGNAL_INTEGRITY"
+F 9 "" H 6450 3850 50  0001 L BNN "FOOTPRINT_REFERENCE"
+F 10 "" H 6450 3850 50  0001 L BNN "LIBRARY_PATH"
+F 11 "250VAC" H 6450 3850 50  0001 L BNN "VOLTAGE_RATING"
+F 12 "1-770669-1.lbr" H 6450 3850 50  0001 L BNN "LIBRARY_REF"
+F 13 "CONN HEADER RT ANG 23POS PCB AU" H 6450 3850 50  0001 L BNN "PART_DESCRIPTION"
+F 14 "" H 6450 3850 50  0001 L BNN "PUBLISHED_DATE"
+F 15 "SnapEDA" H 6450 3850 50  0001 L BNN "PUBLISHER"
+F 16 "Panel Mount, Through Hole, Right angled" H 6450 3850 50  0001 L BNN "PACKAGE"
+F 17 "Varies by Wire gauge" H 6450 3850 50  0001 L BNN "CURRENT_RATING"
+F 18 "" H 6450 3850 50  0001 L BNN "DESIGNATOR"
+F 19 "1-770669-1" H 6450 3850 50  0001 L BNN "TE_PN"
+F 20 "23" H 6450 3850 50  0001 L BNN "POS"
+F 21 "TE_1-770669-1" H 6450 3850 50  0001 L BNN "FOOTPRINT"
+F 22 "1-770669-X" H 6450 3850 50  0001 L BNN "SERIES"
+F 23 "K11" H 6450 3850 50  0001 L BNN "PART_REV"
+F 24 "" H 6450 3850 50  0001 L BNN "FOOTPRINT_PATH"
+F 25 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=770669&DocType=Customer+Drawing&DocLang=English" H 6450 3850 50  0001 L BNN "DATASHEET"
+F 26 "manufacturer recommendations" H 6450 3850 50  0001 L BNN "STANDARD"
+F 27 "" H 6450 3850 50  0001 L BNN "SPICE_MODEL"
+F 28 "Lead free/RoHS compliant" H 6450 3850 50  0001 L BNN "COMPLIANCE"
+	1    6450 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3650 7000 3650
+Wire Wire Line
+	6950 3850 7000 3850
+Wire Wire Line
+	6950 4050 7000 4050
+Wire Wire Line
+	6950 4250 7000 4250
+Wire Wire Line
+	4000 3050 4100 3050
+Wire Wire Line
+	4000 3150 4100 3150
+Wire Wire Line
+	4000 2850 4100 2850
+Wire Wire Line
+	4000 2950 4100 2950
+Text Label 2600 2850 0    50   ~ 0
+RELAY_1
+Text Label 2600 2950 0    50   ~ 0
+RELAY_2
+Text Label 2600 3050 0    50   ~ 0
+RELAY_3
+Text Label 2600 3150 0    50   ~ 0
+RELAY_4
+Text Label 4000 2850 2    50   ~ 0
+RELAY_1
+Text Label 4000 2950 2    50   ~ 0
+RELAY_2
+Text Label 4000 3050 2    50   ~ 0
+RELAY_3
+Text Label 4000 3150 2    50   ~ 0
+RELAY_4
+$Comp
+L power:GND #PWR?
+U 1 1 615896C1
+P 7000 4450
+F 0 "#PWR?" H 7000 4200 50  0001 C CNN
+F 1 "GND" H 7005 4277 50  0000 C CNN
+F 2 "" H 7000 4450 50  0001 C CNN
+F 3 "" H 7000 4450 50  0001 C CNN
+	1    7000 4450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4350 7000 4450
+Wire Wire Line
+	9450 5000 9450 5100
+Wire Wire Line
+	9500 5000 9450 5000
+$Comp
+L power:GND #PWR0102
+U 1 1 618F7155
+P 9450 5100
+F 0 "#PWR0102" H 9450 4850 50  0001 C CNN
+F 1 "GND" H 9455 4927 50  0000 C CNN
+F 2 "" H 9450 5100 50  0001 C CNN
+F 3 "" H 9450 5100 50  0001 C CNN
+	1    9450 5100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 4000 9450 4000
+Wire Wire Line
+	9500 3900 9450 3900
+Wire Wire Line
+	9500 3800 9450 3800
+Wire Wire Line
+	9500 3700 9450 3700
+Wire Wire Line
+	9500 4800 9450 4800
+Wire Wire Line
+	9500 4400 9450 4400
+Wire Wire Line
+	9500 4300 9450 4300
+Wire Wire Line
+	9500 4200 9450 4200
+Wire Wire Line
+	9500 3300 9450 3300
+Wire Wire Line
+	9500 3400 9450 3400
+Wire Wire Line
+	9500 3500 9450 3500
+Wire Wire Line
+	9500 3600 9450 3600
+Wire Wire Line
+	9500 4600 9450 4600
+Wire Wire Line
+	9500 4100 9450 4100
+Wire Wire Line
+	9500 4700 9450 4700
+Wire Wire Line
+	9500 4500 9450 4500
+Wire Wire Line
+	9500 4900 9450 4900
+Connection ~ 9450 5000
+Wire Wire Line
+	9450 5000 9450 4900
+Connection ~ 9450 3300
+Wire Wire Line
+	9450 3300 9400 3300
+Connection ~ 9450 3400
+Wire Wire Line
+	9450 3400 9400 3400
+Wire Wire Line
+	9450 3400 9450 3300
+Connection ~ 9450 3500
+Wire Wire Line
+	9450 3500 9400 3500
+Wire Wire Line
+	9450 3500 9450 3400
+Connection ~ 9450 3600
+Wire Wire Line
+	9450 3600 9400 3600
+Wire Wire Line
+	9450 3600 9450 3500
+Connection ~ 9450 3700
+Wire Wire Line
+	9450 3700 9400 3700
+Wire Wire Line
+	9450 3700 9450 3600
+Connection ~ 9450 3800
+Wire Wire Line
+	9450 3800 9400 3800
+Wire Wire Line
+	9450 3800 9450 3700
+Connection ~ 9450 3900
+Wire Wire Line
+	9450 3900 9400 3900
+Wire Wire Line
+	9450 3900 9450 3800
+Connection ~ 9450 4000
+Wire Wire Line
+	9450 4000 9400 4000
+Wire Wire Line
+	9450 4000 9450 3900
+Connection ~ 9450 4100
+Wire Wire Line
+	9450 4100 9400 4100
+Wire Wire Line
+	9450 4100 9450 4000
+Connection ~ 9450 4200
+Wire Wire Line
+	9450 4200 9400 4200
+Wire Wire Line
+	9450 4200 9450 4100
+Connection ~ 9450 4300
+Wire Wire Line
+	9450 4300 9400 4300
+Wire Wire Line
+	9450 4300 9450 4200
+Connection ~ 9450 4400
+Wire Wire Line
+	9450 4400 9400 4400
+Wire Wire Line
+	9450 4400 9450 4300
+Connection ~ 9450 4500
+Wire Wire Line
+	9450 4500 9400 4500
+Wire Wire Line
+	9450 4500 9450 4400
+Connection ~ 9450 4600
+Wire Wire Line
+	9450 4600 9400 4600
+Wire Wire Line
+	9450 4600 9450 4500
+Connection ~ 9450 4700
+Wire Wire Line
+	9450 4700 9400 4700
+Wire Wire Line
+	9450 4700 9450 4600
+Connection ~ 9450 4800
+Wire Wire Line
+	9450 4800 9400 4800
+Wire Wire Line
+	9450 4800 9450 4700
+Connection ~ 9450 4900
+Wire Wire Line
+	9450 4900 9400 4900
+Wire Wire Line
+	9450 4900 9450 4800
+Wire Wire Line
+	6950 3350 7000 3350
+Text Label 7050 3450 0    50   ~ 0
+INTERLOCK_BUTTONS_GND
+Text Label 7050 3350 0    50   ~ 0
+5V_GND
+Wire Wire Line
+	7000 3350 7000 3450
+Connection ~ 7000 3350
+Wire Wire Line
+	7000 3350 7050 3350
+Connection ~ 7000 3450
+Wire Wire Line
+	7000 3450 7050 3450
+Wire Wire Line
+	7000 3450 7000 3550
+Connection ~ 7000 4350
+Wire Wire Line
+	7000 4350 6950 4350
+Connection ~ 7000 3550
+Wire Wire Line
+	7000 3550 6950 3550
+Wire Wire Line
+	7000 3550 7000 3650
+Connection ~ 7000 3650
+Wire Wire Line
+	7000 3650 7000 3750
+Connection ~ 7000 3750
+Wire Wire Line
+	7000 3750 6950 3750
+Wire Wire Line
+	7000 3750 7000 3850
+Connection ~ 7000 3850
+Wire Wire Line
+	7000 3850 7000 3950
+Connection ~ 7000 3950
+Wire Wire Line
+	7000 3950 6950 3950
+Wire Wire Line
+	7000 3950 7000 4050
+Connection ~ 7000 4050
+Wire Wire Line
+	7000 4050 7000 4150
+Connection ~ 7000 4150
+Wire Wire Line
+	7000 4150 6950 4150
+Wire Wire Line
+	7000 4150 7000 4250
+Connection ~ 7000 4250
+Wire Wire Line
+	7000 4250 7000 4350
 $EndSCHEMATC
