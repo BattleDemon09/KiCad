@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Thermistor Footprints")(type KiCad)(uri "${KIPRJMOD}/Thermistor Footprints.pretty")(options "")(descr ""))
+)

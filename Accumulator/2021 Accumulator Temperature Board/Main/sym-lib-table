@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Main-rescue)(type Legacy)(uri ${KIPRJMOD}/Main-rescue.lib)(options "")(descr ""))
+  (lib (name RFM)(type Legacy)(uri "C:/Users/Ralim.DESKTOP-R877O7F/Documents/GitHub/UOW-Motorsport/HV Electronics/Battery Thermistor Board/PCB/Main/RFM.lib")(options "")(descr ""))
+)

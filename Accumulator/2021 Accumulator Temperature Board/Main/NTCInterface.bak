@@ -1,0 +1,45 @@
+EESchema Schematic File Version 4
+LIBS:Main-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 17 20
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3900 3150 0    50   Input ~ 0
+ADC
+Wire Wire Line
+	3900 3150 4250 3150
+Wire Wire Line
+	4250 3150 4250 3050
+Connection ~ 4250 3150
+$Comp
+L power:VDD #PWR0138
+U 1 1 5C19DADE
+P 4250 2750
+AR Path="/5C176383/5C19DA15/5C19DADE" Ref="#PWR0138"  Part="1" 
+AR Path="/5C176383/5C19DFC0/5C19DADE" Ref="#PWR0142"  Part="1" 
+AR Path="/5C176383/5C19DFC6/5C19DADE" Ref="#PWR0146"  Part="1" 
+AR Path="/5C176383/5C19DFCA/5C19DADE" Ref="#PWR0150"  Part="1" 
+F 0 "#PWR0138" H 4250 2600 50  0001 C CNN
+F 1 "VDD" H 4267 2923 50  0000 C CNN
+F 2 "" H 4250 2750 50  0001 C CNN
+F 3 "" H 4250 2750 50  0001 C CNN
+	1    4250 2750
+	1    0    0    -1  
+$EndComp
+Text HLabel 5600 3150 2    50   Input ~ 0
+NTC_IN
+Text Notes 3450 3450 0    50   ~ 0
+No pulldown required in sim
+Wire Wire Line
+	4250 3150 5600 3150
+$EndSCHEMATC
