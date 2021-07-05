@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 27 29
+Sheet 31 32
 Title ""
 Date ""
 Rev ""
@@ -28,8 +28,8 @@ AR Path="/5E546572/61C00B54" Ref="U?"  Part="1"
 AR Path="/5E545B2D/61C00B54" Ref="U?"  Part="1" 
 AR Path="/5E5461C2/61C00B54" Ref="U?"  Part="1" 
 AR Path="/61C00B54" Ref="U?"  Part="1" 
-AR Path="/61BFBFBE/61C00B54" Ref="U2701"  Part="1" 
-F 0 "U2701" H 5700 4050 50  0000 C CNN
+AR Path="/61BFBFBE/61C00B54" Ref="U3"  Part="1" 
+F 0 "U3" H 5700 4050 50  0000 C CNN
 F 1 "ACS71240" H 5700 3350 50  0000 C CNN
 F 2 "" H 5700 3700 50  0001 C CNN
 F 3 "https://www.allegromicro.com/~/media/Files/Datasheets/ACS71240-Data-Sheet.ashx" H 5700 3700 50  0001 C CNN
@@ -66,8 +66,6 @@ Text HLabel 4550 3400 0    50   Output ~ 0
 V_Monitor
 Wire Wire Line
 	4700 3400 4550 3400
-Text Notes 6650 3850 0    50   ~ 0
-Bypass capacitor
 $Comp
 L power:GND #PWR?
 U 1 1 61C00B48
@@ -75,8 +73,8 @@ P 6800 3950
 AR Path="/5E546572/61C00B48" Ref="#PWR?"  Part="1" 
 AR Path="/5E545B2D/61C00B48" Ref="#PWR?"  Part="1" 
 AR Path="/5E5461C2/61C00B48" Ref="#PWR?"  Part="1" 
-AR Path="/61BFBFBE/61C00B48" Ref="#PWR02701"  Part="1" 
-F 0 "#PWR02701" H 6800 3700 50  0001 C CNN
+AR Path="/61BFBFBE/61C00B48" Ref="#PWR038"  Part="1" 
+F 0 "#PWR038" H 6800 3700 50  0001 C CNN
 F 1 "GND" H 6805 3777 50  0000 C CNN
 F 2 "" H 6800 3950 50  0001 C CNN
 F 3 "" H 6800 3950 50  0001 C CNN
@@ -100,8 +98,8 @@ P 6600 3700
 AR Path="/5E546572/61C00B40" Ref="C?"  Part="1" 
 AR Path="/5E545B2D/61C00B40" Ref="C?"  Part="1" 
 AR Path="/5E5461C2/61C00B40" Ref="C?"  Part="1" 
-AR Path="/61BFBFBE/61C00B40" Ref="C2701"  Part="1" 
-F 0 "C2701" H 6715 3746 50  0000 L CNN
+AR Path="/61BFBFBE/61C00B40" Ref="C7"  Part="1" 
+F 0 "C7" H 6715 3746 50  0000 L CNN
 F 1 "0.1µF" H 6715 3655 50  0000 L CNN
 F 2 "" H 6638 3550 50  0001 C CNN
 F 3 "~" H 6600 3700 50  0001 C CNN
@@ -127,12 +125,14 @@ P 4850 3400
 AR Path="/5E546572/61C00B2A" Ref="R?"  Part="1" 
 AR Path="/5E545B2D/61C00B2A" Ref="R?"  Part="1" 
 AR Path="/5E5461C2/61C00B2A" Ref="R?"  Part="1" 
-AR Path="/61BFBFBE/61C00B2A" Ref="R2701"  Part="1" 
-F 0 "R2701" V 4750 3400 50  0000 C CNN
+AR Path="/61BFBFBE/61C00B2A" Ref="R28"  Part="1" 
+F 0 "R28" V 4750 3400 50  0000 C CNN
 F 1 "10k" V 4950 3400 50  0000 C CNN
 F 2 "" V 4780 3400 50  0001 C CNN
 F 3 "~" H 4850 3400 50  0001 C CNN
 	1    4850 3400
 	0    1    1    0   
 $EndComp
+Text Notes 6650 3850 0    50   ~ 0
+Bypass capacitor
 $EndSCHEMATC

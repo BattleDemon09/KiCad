@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP J115F
+D 2x independent SPDT Micro-mini dual PCB relay
+K relay omron spdt
+F https://www.citrelay.com/Catalog%20Pages/RelayCatalog/J115F%2050amp.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP J115
+D 2x independent SPDT Micro-mini dual PCB relay
+K relay omron spdt
+F https://omronfs.omron.com/en_US/ecb/products/pdf/en-g8nw.pdf
+$ENDCMP
+#
+#End Doc Library
