@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 30 32
+Sheet 3 32
 Title "DC/DC Converter Circuit"
 Date "2021-06-28"
 Rev "2"
@@ -54,9 +54,9 @@ L Device:CP C?
 U 1 1 5E7A7C2F
 P 4400 3800
 AR Path="/5E546572/5E7A7C2F" Ref="C?"  Part="1" 
-AR Path="/5E545B2D/5E7A7C2F" Ref="C3"  Part="1" 
+AR Path="/5E545B2D/5E7A7C2F" Ref="C1"  Part="1" 
 AR Path="/5E5461C2/5E7A7C2F" Ref="C?"  Part="1" 
-F 0 "C3" H 4400 4000 50  0000 L CNN
+F 0 "C1" H 4400 4000 50  0000 L CNN
 F 1 "330µF" H 4400 3900 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 4438 3650 50  0001 C CNN
 F 3 "https://content.kemet.com/datasheets/KEM_A4067_A750.pdf" H 4400 3800 50  0001 C CNN
@@ -72,9 +72,9 @@ L Device:C C?
 U 1 1 5E7A88E4
 P 4750 3800
 AR Path="/5E546572/5E7A88E4" Ref="C?"  Part="1" 
-AR Path="/5E545B2D/5E7A88E4" Ref="C4"  Part="1" 
+AR Path="/5E545B2D/5E7A88E4" Ref="C2"  Part="1" 
 AR Path="/5E5461C2/5E7A88E4" Ref="C?"  Part="1" 
-F 0 "C4" H 4750 4000 50  0000 L CNN
+F 0 "C2" H 4750 4000 50  0000 L CNN
 F 1 "22µF" H 4750 3900 50  0000 L CNN
 F 2 "Capacitor_extra:C_Murata_KCM55" H 4788 3650 50  0001 C CNN
 F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/KCM55_E.pdf" H 4750 3800 50  0001 C CNN
@@ -86,10 +86,10 @@ Wire Wire Line
 Text HLabel 4200 3500 0    70   Input ~ 14
 24V_IN
 $Comp
-L DCDC_TDK:i7A24045A033V U2
+L DCDC_TDK:i7A24045A033V U1
 U 1 1 60E5B9E9
 P 5600 3800
-F 0 "U2" H 5600 4365 50  0000 C CNN
+F 0 "U1" H 5600 4365 50  0000 C CNN
 F 1 "i7A24045A033V-001-R" H 5600 4274 50  0000 C CNN
 F 2 "DCDC:i7A24045A033V" H 5450 4100 50  0001 C CNN
 F 3 "https://product.tdk.com/en/system/files?file=dam/doc/product/power/switching-power/dc-dc-converter/specification/i7a_spec.pdf" H 5450 4100 50  0001 C CNN
@@ -117,9 +117,9 @@ L power:GND #PWR?
 U 1 1 610D36B1
 P 7600 4200
 AR Path="/5E546572/610D36B1" Ref="#PWR?"  Part="1" 
-AR Path="/5E545B2D/610D36B1" Ref="#PWR037"  Part="1" 
+AR Path="/5E545B2D/610D36B1" Ref="#PWR06"  Part="1" 
 AR Path="/5E5461C2/610D36B1" Ref="#PWR?"  Part="1" 
-F 0 "#PWR037" H 7600 3950 50  0001 C CNN
+F 0 "#PWR06" H 7600 3950 50  0001 C CNN
 F 1 "GND" H 7605 4027 50  0000 C CNN
 F 2 "" H 7600 4200 50  0001 C CNN
 F 3 "" H 7600 4200 50  0001 C CNN
@@ -131,11 +131,11 @@ L Device:LED D?
 U 1 1 5E7B7CF5
 P 7600 3850
 AR Path="/5E546572/5E7B7CF5" Ref="D?"  Part="1" 
-AR Path="/5E545B2D/5E7B7CF5" Ref="D29"  Part="1" 
+AR Path="/5E545B2D/5E7B7CF5" Ref="D3"  Part="1" 
 AR Path="/5E5461C2/5E7B7CF5" Ref="D?"  Part="1" 
-F 0 "D29" V 7700 3700 50  0000 C CNN
+F 0 "D3" V 7700 3700 50  0000 C CNN
 F 1 "PWR_ON_LED" V 7600 3550 50  0000 C CNN
-F 2 "" H 7600 3850 50  0001 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7600 3850 50  0001 C CNN
 F 3 "~" H 7600 3850 50  0001 C CNN
 	1    7600 3850
 	0    -1   -1   0   
@@ -169,9 +169,9 @@ L Device:CP C?
 U 1 1 610E5B6D
 P 6950 3800
 AR Path="/5E546572/610E5B6D" Ref="C?"  Part="1" 
-AR Path="/5E545B2D/610E5B6D" Ref="C6"  Part="1" 
+AR Path="/5E545B2D/610E5B6D" Ref="C4"  Part="1" 
 AR Path="/5E5461C2/610E5B6D" Ref="C?"  Part="1" 
-F 0 "C6" H 6950 4000 50  0000 L CNN
+F 0 "C4" H 6950 4000 50  0000 L CNN
 F 1 "330uF" H 6950 3900 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 6988 3650 50  0001 C CNN
 F 3 "https://content.kemet.com/datasheets/KEM_A4067_A750.pdf" H 6950 3800 50  0001 C CNN
@@ -183,9 +183,9 @@ L Device:C C?
 U 1 1 5E7CBE12
 P 6650 3800
 AR Path="/5E546572/5E7CBE12" Ref="C?"  Part="1" 
-AR Path="/5E545B2D/5E7CBE12" Ref="C5"  Part="1" 
+AR Path="/5E545B2D/5E7CBE12" Ref="C3"  Part="1" 
 AR Path="/5E5461C2/5E7CBE12" Ref="C?"  Part="1" 
-F 0 "C5" H 6650 4000 50  0000 L CNN
+F 0 "C3" H 6650 4000 50  0000 L CNN
 F 1 "22µF" H 6650 3900 50  0000 L CNN
 F 2 "Capacitor_extra:C_Murata_KCM55" H 6688 3650 50  0001 C CNN
 F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/KCM55_E.pdf" H 6650 3800 50  0001 C CNN
@@ -208,9 +208,9 @@ L power:GND #PWR?
 U 1 1 5E7AC91D
 P 4200 4200
 AR Path="/5E546572/5E7AC91D" Ref="#PWR?"  Part="1" 
-AR Path="/5E545B2D/5E7AC91D" Ref="#PWR036"  Part="1" 
+AR Path="/5E545B2D/5E7AC91D" Ref="#PWR05"  Part="1" 
 AR Path="/5E5461C2/5E7AC91D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR036" H 4200 3950 50  0001 C CNN
+F 0 "#PWR05" H 4200 3950 50  0001 C CNN
 F 1 "GND" H 4205 4027 50  0000 C CNN
 F 2 "" H 4200 4200 50  0001 C CNN
 F 3 "" H 4200 4200 50  0001 C CNN
@@ -239,11 +239,11 @@ L Device:R R?
 U 1 1 60E34B0B
 P 7400 3650
 AR Path="/5E546572/60E34B0B" Ref="R?"  Part="1" 
-AR Path="/5E545B2D/60E34B0B" Ref="R27"  Part="1" 
+AR Path="/5E545B2D/60E34B0B" Ref="R1"  Part="1" 
 AR Path="/5E5461C2/60E34B0B" Ref="R?"  Part="1" 
-F 0 "R27" V 7475 3650 50  0000 C CNN
+F 0 "R1" V 7475 3650 50  0000 C CNN
 F 1 "10k" V 7300 3650 50  0000 C CNN
-F 2 "" V 7330 3650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7330 3650 50  0001 C CNN
 F 3 "~" H 7400 3650 50  0001 C CNN
 	1    7400 3650
 	0    -1   -1   0   

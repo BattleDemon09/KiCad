@@ -1,4 +1,4 @@
-17604908350381811
+17614629069169018
 1-770669-1
 TE_1-770669-1
 
@@ -47263,6 +47263,13 @@ Vishay KBU rectifier diode bridge
 0
 4
 4
+Diode_UOWM
+TO-277_FSV10150V
+Schottky diode
+schottky diode TO-277 FSV10150V
+0
+3
+3
 Diodes_extra
 Sanken_SJP
 Diode SMD SJP (Sanken)
@@ -48697,6 +48704,13 @@ Fuse, Fuseholder, TR5, Littelfuse/Wickmann, No. 460, No560,
 Fuse Fuseholder TR5 Littelfuse/Wickmann No. 460 No560 
 0
 2
+2
+Fuse_UOWM
+Keystone_3568
+fuse holder, car blade fuse mini, http://www.keyelco.com/product-pdf.cfm?p=306
+car blade fuse mini
+0
+4
 2
 Fuseclips
 Fuse_clip_6.3x32mm_Littelfuse_102071
@@ -79708,3 +79722,31 @@ Zigbee_Module_MRF24J40MD 2
 0
 12
 12
+eec
+Allegro_MicroSystems_LLC-LCB-8-0-0-IPC_A
+
+
+0
+8
+8
+eec
+Allegro_MicroSystems_LLC-LCB-8-0-0-IPC_B
+
+
+0
+8
+8
+eec
+Allegro_MicroSystems_LLC-LCB-8-0-0-IPC_C
+
+
+0
+8
+8
+eec
+Allegro_MicroSystems_LLC-LCB-8-0-0-MFG
+
+
+0
+8
+8
