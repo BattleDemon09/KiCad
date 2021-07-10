@@ -245,17 +245,6 @@ F 3 "~" H 5150 5150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0149
-U 1 1 5C282761
-P 5150 5350
-F 0 "#PWR0149" H 5150 5100 50  0001 C CNN
-F 1 "GND" H 5155 5175 50  0000 C CNN
-F 2 "" H 5150 5350 50  0001 C CNN
-F 3 "" H 5150 5350 50  0001 C CNN
-	1    5150 5350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x01 J1005
 U 1 1 5C282C58
 P 5550 5150
@@ -277,17 +266,6 @@ F 3 "~" H 5800 5150 50  0001 C CNN
 	1    5800 5150
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:GND #PWR0161
-U 1 1 5C282FE8
-P 5800 5350
-F 0 "#PWR0161" H 5800 5100 50  0001 C CNN
-F 1 "GND" H 5805 5175 50  0000 C CNN
-F 2 "" H 5800 5350 50  0001 C CNN
-F 3 "" H 5800 5350 50  0001 C CNN
-	1    5800 5350
-	1    0    0    -1  
-$EndComp
 NoConn ~ 5550 5350
 NoConn ~ 2300 3000
 NoConn ~ 2300 3100
@@ -303,4 +281,6 @@ F 3 "~" H 5400 5150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 NoConn ~ 5400 5350
+NoConn ~ 5800 5350
+NoConn ~ 5150 5350
 $EndSCHEMATC
