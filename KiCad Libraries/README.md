@@ -17,6 +17,7 @@ This should make custom footprints and libraries easier to find.
 List of places to find symbols/models/footprints. Please post links here to anywhere you find useful.
 
 - [Octopart](https://octopart.com)
+- [SnapEDA](https://www.snapeda.com)
 
 ## To add the path for these KiCad libraries
 

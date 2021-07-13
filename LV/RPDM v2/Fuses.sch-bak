@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 32
+Sheet 3 30
 Title "Fuses"
 Date "2021-06-28"
 Rev "2"
@@ -14,344 +14,311 @@ Comment3 "Brandon Shaw, Joshua Smedley"
 Comment4 "Design By:"
 $EndDescr
 $Sheet
-S 3650 1350 900  300 
+S 2400 1100 900  300 
 U 5E574CF7
 F0 "Fuse_1" 50
 F1 "Fuse.sch" 50
-F2 "Fuse_Out" O R 4550 1500 50 
-F3 "Power_In" I L 3650 1500 50 
+F2 "Fuse_Out" O R 3300 1250 50 
+F3 "Power_In" I L 2400 1250 50 
 $EndSheet
-Text HLabel 3350 1500 0    50   Input ~ 0
+Text HLabel 2000 1250 0    50   Input ~ 0
 Vin
 $Sheet
-S 3650 1850 900  300 
+S 2400 1600 900  300 
 U 5E58AB03
 F0 "Fuse_2" 50
 F1 "Fuse.sch" 50
-F2 "Fuse_Out" O R 4550 2000 50 
-F3 "Power_In" I L 3650 2000 50 
+F2 "Fuse_Out" O R 3300 1750 50 
+F3 "Power_In" I L 2400 1750 50 
 $EndSheet
 $Sheet
-S 3650 2350 900  300 
+S 2400 2100 900  300 
 U 5E58ABE6
 F0 "Fuse_3" 50
 F1 "Fuse.sch" 50
-F2 "Power_In" I L 3650 2500 50 
-F3 "Fuse_Out" O R 4550 2500 50 
+F2 "Power_In" I L 2400 2250 50 
+F3 "Fuse_Out" O R 3300 2250 50 
 $EndSheet
 $Sheet
-S 3650 2850 900  300 
+S 2400 2600 900  300 
 U 5E58ACF6
 F0 "Fuse_4" 50
 F1 "Fuse.sch" 50
-F2 "Power_In" I L 3650 3000 50 
-F3 "Fuse_Out" O R 4550 3000 50 
+F2 "Power_In" I L 2400 2750 50 
+F3 "Fuse_Out" O R 3300 2750 50 
 $EndSheet
 $Sheet
-S 3650 3350 900  300 
+S 2400 3100 900  300 
 U 5E58ADD6
 F0 "Fuse_5" 50
 F1 "Fuse.sch" 50
-F2 "Power_In" I L 3650 3500 50 
-F3 "Fuse_Out" O R 4550 3500 50 
+F2 "Power_In" I L 2400 3250 50 
+F3 "Fuse_Out" O R 3300 3250 50 
 $EndSheet
 $Sheet
-S 3650 3850 900  300 
+S 2400 3600 900  300 
 U 5E58AEC5
 F0 "Fuse_6" 50
 F1 "Fuse.sch" 50
-F2 "Power_In" I L 3650 4000 50 
-F3 "Fuse_Out" O R 4550 4000 50 
+F2 "Power_In" I L 2400 3750 50 
+F3 "Fuse_Out" O R 3300 3750 50 
 $EndSheet
 $Sheet
-S 3650 4350 900  300 
+S 2400 4100 900  300 
 U 5E58AF99
 F0 "Fuse_7" 50
 F1 "Fuse.sch" 50
-F2 "Power_In" I L 3650 4500 50 
-F3 "Fuse_Out" O R 4550 4500 50 
+F2 "Power_In" I L 2400 4250 50 
+F3 "Fuse_Out" O R 3300 4250 50 
 $EndSheet
 $Sheet
-S 3650 4850 900  300 
+S 2400 4600 900  300 
 U 5E58B05B
 F0 "Fuse_8" 50
 F1 "Fuse.sch" 50
-F2 "Fuse_Out" O R 4550 5000 50 
-F3 "Power_In" I L 3650 5000 50 
+F2 "Fuse_Out" O R 3300 4750 50 
+F3 "Power_In" I L 2400 4750 50 
 $EndSheet
 $Sheet
-S 6150 1350 900  300 
+S 5400 1100 900  300 
 U 5E58C987
 F0 "Fuse_11" 50
 F1 "Fuse.sch" 50
-F2 "Power_In" I L 6150 1500 50 
-F3 "Fuse_Out" O R 7050 1500 50 
+F2 "Power_In" I L 5400 1250 50 
+F3 "Fuse_Out" O R 6300 1250 50 
 $EndSheet
 $Sheet
-S 6150 1850 900  300 
+S 5400 1600 900  300 
 U 5E58C98B
 F0 "Fuse_12" 50
 F1 "Fuse.sch" 50
-F2 "Power_In" I L 6150 2000 50 
-F3 "Fuse_Out" O R 7050 2000 50 
+F2 "Power_In" I L 5400 1750 50 
+F3 "Fuse_Out" O R 6300 1750 50 
 $EndSheet
 Wire Wire Line
-	3650 1500 3500 1500
+	2400 1250 2250 1250
 Wire Wire Line
-	3500 1500 3500 2000
+	2250 1250 2250 1750
 Wire Wire Line
-	3500 2000 3650 2000
+	2250 1750 2400 1750
 Wire Wire Line
-	3500 2000 3500 2500
+	2250 1750 2250 2250
 Wire Wire Line
-	3500 2500 3650 2500
-Connection ~ 3500 2000
+	2250 2250 2400 2250
+Connection ~ 2250 1750
 Wire Wire Line
-	3500 2500 3500 3000
+	2250 2250 2250 2750
 Wire Wire Line
-	3500 3000 3650 3000
-Connection ~ 3500 2500
+	2250 2750 2400 2750
+Connection ~ 2250 2250
 Wire Wire Line
-	3500 3000 3500 3500
+	2250 2750 2250 3250
 Wire Wire Line
-	3500 3500 3650 3500
-Connection ~ 3500 3000
+	2250 3250 2400 3250
+Connection ~ 2250 2750
 Wire Wire Line
-	3650 4000 3500 4000
+	2400 3750 2250 3750
 Wire Wire Line
-	3500 4000 3500 3500
-Connection ~ 3500 3500
+	2250 3750 2250 3250
+Connection ~ 2250 3250
 Wire Wire Line
-	3650 4500 3500 4500
+	2400 4250 2250 4250
 Wire Wire Line
-	3500 4500 3500 4000
-Connection ~ 3500 4000
+	2250 4250 2250 3750
+Connection ~ 2250 3750
 Wire Wire Line
-	3650 5000 3500 5000
+	2400 4750 2250 4750
 Wire Wire Line
-	3500 5000 3500 4500
-Connection ~ 3500 4500
+	2250 4750 2250 4250
+Connection ~ 2250 4250
 Wire Wire Line
-	3350 1500 3500 1500
-Connection ~ 3500 1500
+	2000 1250 2250 1250
+Connection ~ 2250 1250
 Wire Wire Line
-	3650 5500 3500 5500
+	2400 5250 2250 5250
 Wire Wire Line
-	3500 6000 3650 6000
-Wire Wire Line
-	5850 1500 6000 1500
-Text HLabel 4650 1500 2    50   Output ~ 0
+	2250 5750 2400 5750
+Text HLabel 3400 1250 2    50   Output ~ 0
 Fuse_Out1
 Wire Wire Line
-	4550 1500 4650 1500
+	3300 1250 3400 1250
 $Sheet
-S 3650 5350 900  300 
+S 2400 5100 900  300 
 U 5E65E6F4
 F0 "Fuse_9" 50
 F1 "Fuse.sch" 50
-F2 "Power_In" I L 3650 5500 50 
-F3 "Fuse_Out" O R 4550 5500 50 
+F2 "Power_In" I L 2400 5250 50 
+F3 "Fuse_Out" O R 3300 5250 50 
 $EndSheet
 $Sheet
-S 3650 5850 900  300 
+S 2400 5600 900  300 
 U 5E65E6F8
 F0 "Fuse_10" 50
 F1 "Fuse.sch" 50
-F2 "Power_In" I L 3650 6000 50 
-F3 "Fuse_Out" O R 4550 6000 50 
+F2 "Power_In" I L 2400 5750 50 
+F3 "Fuse_Out" O R 3300 5750 50 
 $EndSheet
-Text HLabel 4650 2000 2    50   Output ~ 0
+Text HLabel 3400 1750 2    50   Output ~ 0
 Fuse_Out2
 Wire Wire Line
-	4550 2000 4650 2000
-Text HLabel 4650 2500 2    50   Output ~ 0
+	3300 1750 3400 1750
+Text HLabel 3400 2250 2    50   Output ~ 0
 Fuse_Out3
 Wire Wire Line
-	4550 2500 4650 2500
-Text HLabel 4650 3000 2    50   Output ~ 0
+	3300 2250 3400 2250
+Text HLabel 3400 2750 2    50   Output ~ 0
 Fuse_Out4
 Wire Wire Line
-	4550 3000 4650 3000
-Text HLabel 4650 3500 2    50   Output ~ 0
+	3300 2750 3400 2750
+Text HLabel 3400 3250 2    50   Output ~ 0
 Fuse_Out5
 Wire Wire Line
-	4550 3500 4650 3500
-Text HLabel 4650 4000 2    50   Output ~ 0
+	3300 3250 3400 3250
+Text HLabel 3400 3750 2    50   Output ~ 0
 Fuse_Out6
 Wire Wire Line
-	4550 4000 4650 4000
-Text HLabel 4650 4500 2    50   Output ~ 0
+	3300 3750 3400 3750
+Text HLabel 3400 4250 2    50   Output ~ 0
 Fuse_Out7
 Wire Wire Line
-	4550 4500 4650 4500
-Text HLabel 4650 5000 2    50   Output ~ 0
+	3300 4250 3400 4250
+Text HLabel 3400 4750 2    50   Output ~ 0
 Fuse_Out8
 Wire Wire Line
-	4550 5000 4650 5000
-Text HLabel 7150 1500 2    50   Output ~ 0
+	3300 4750 3400 4750
+Text HLabel 6400 1250 2    50   Output ~ 0
 Fuse_Out11
 Wire Wire Line
-	7050 1500 7150 1500
-Text HLabel 7150 2000 2    50   Output ~ 0
+	6300 1250 6400 1250
+Text HLabel 6400 1750 2    50   Output ~ 0
 Fuse_Out12
 Wire Wire Line
-	7050 2000 7150 2000
-Text HLabel 4650 5500 2    50   Output ~ 0
+	6300 1750 6400 1750
+Text HLabel 3400 5250 2    50   Output ~ 0
 Fuse_Out9
 Wire Wire Line
-	4550 5500 4650 5500
-Text HLabel 4650 6000 2    50   Output ~ 0
+	3300 5250 3400 5250
+Text HLabel 3400 5750 2    50   Output ~ 0
 Fuse_Out10
 Wire Wire Line
-	4550 6000 4650 6000
+	3300 5750 3400 5750
 Wire Wire Line
-	6000 1500 6150 1500
+	5250 1250 5400 1250
 Wire Wire Line
-	6000 2000 6150 2000
-Connection ~ 6000 2500
+	5250 1750 5400 1750
+Connection ~ 5250 2250
 Wire Wire Line
-	6000 2500 6000 3000
+	5250 2250 5250 2750
 $Sheet
-S 6150 2350 900  300 
+S 5400 2100 900  300 
 U 5E789840
 F0 "Fuse_13" 50
 F1 "Fuse.sch" 50
-F2 "Power_In" I L 6150 2500 50 
-F3 "Fuse_Out" O R 7050 2500 50 
+F2 "Power_In" I L 5400 2250 50 
+F3 "Fuse_Out" O R 6300 2250 50 
 $EndSheet
 $Sheet
-S 6150 2850 900  300 
+S 5400 2600 900  300 
 U 5E789844
 F0 "Fuse_14" 50
 F1 "Fuse.sch" 50
-F2 "Power_In" I L 6150 3000 50 
-F3 "Fuse_Out" O R 7050 3000 50 
+F2 "Power_In" I L 5400 2750 50 
+F3 "Fuse_Out" O R 6300 2750 50 
 $EndSheet
-Text HLabel 7150 2500 2    50   Output ~ 0
+Text HLabel 6400 2250 2    50   Output ~ 0
 Fuse_Out13
 Wire Wire Line
-	7050 2500 7150 2500
-Text HLabel 7150 3000 2    50   Output ~ 0
+	6300 2250 6400 2250
+Text HLabel 6400 2750 2    50   Output ~ 0
 Fuse_Out14
 Wire Wire Line
-	7050 3000 7150 3000
+	6300 2750 6400 2750
 Wire Wire Line
-	6000 2500 6150 2500
+	5250 2250 5400 2250
 Wire Wire Line
-	6000 3000 6150 3000
+	5250 2750 5400 2750
 Wire Wire Line
-	6000 3000 6000 3500
-Connection ~ 6000 3500
-Text HLabel 5850 1500 0    50   Input ~ 0
-Vin
+	5250 2750 5250 3250
+Connection ~ 5250 3250
 $Sheet
-S 6150 3350 900  300 
+S 5400 3100 900  300 
 U 6121AD04
-F0 "sheet6121AD00" 50
+F0 "Fuse_15" 50
 F1 "Fuse.sch" 50
-F2 "Power_In" I L 6150 3500 50 
-F3 "Fuse_Out" O R 7050 3500 50 
+F2 "Power_In" I L 5400 3250 50 
+F3 "Fuse_Out" O R 6300 3250 50 
 $EndSheet
-Text HLabel 7150 3500 2    50   Output ~ 0
+Text HLabel 6400 3250 2    50   Output ~ 0
 Fuse_Out15
 Wire Wire Line
-	7050 3500 7150 3500
+	6300 3250 6400 3250
 Wire Wire Line
-	6000 3500 6150 3500
-Connection ~ 6000 3000
+	5250 3250 5400 3250
+Connection ~ 5250 2750
 Wire Wire Line
-	6000 1500 6000 2000
+	5250 1250 5250 1750
 Wire Wire Line
-	3500 6000 3500 5500
-Connection ~ 3500 5000
-Connection ~ 3500 5500
+	2250 5750 2250 5250
+Connection ~ 2250 4750
+Connection ~ 2250 5250
 Wire Wire Line
-	3500 5500 3500 5000
-Connection ~ 6000 1500
-Connection ~ 6000 2000
+	2250 5250 2250 4750
+Connection ~ 5250 1750
 Wire Wire Line
-	6000 2000 6000 2500
+	5250 1750 5250 2250
 Wire Wire Line
-	6000 3500 6000 4000
+	5250 3250 5250 3750
 $Sheet
-S 6150 3850 900  300 
+S 5400 3600 900  300 
 U 60E9D8C7
-F0 "sheet60E9D8C7" 50
+F0 "Fuse_16" 50
 F1 "Fuse.sch" 50
-F2 "Power_In" I L 6150 4000 50 
-F3 "Fuse_Out" O R 7050 4000 50 
+F2 "Power_In" I L 5400 3750 50 
+F3 "Fuse_Out" O R 6300 3750 50 
 $EndSheet
 $Sheet
-S 6150 4350 900  300 
+S 5400 4100 900  300 
 U 60E9D8CB
-F0 "sheet60E9D8CB" 50
+F0 "Fuse_17" 50
 F1 "Fuse.sch" 50
-F2 "Power_In" I L 6150 4500 50 
-F3 "Fuse_Out" O R 7050 4500 50 
+F2 "Power_In" I L 5400 4250 50 
+F3 "Fuse_Out" O R 6300 4250 50 
 $EndSheet
-Text HLabel 7150 4000 2    50   Output ~ 0
+Text HLabel 6400 3750 2    50   Output ~ 0
 Fuse_Out16
 Wire Wire Line
-	7050 4000 7150 4000
-Text HLabel 7150 4500 2    50   Output ~ 0
+	6300 3750 6400 3750
+Text HLabel 6400 4250 2    50   Output ~ 0
 Fuse_Out17
 Wire Wire Line
-	7050 4500 7150 4500
+	6300 4250 6400 4250
 Wire Wire Line
-	6000 4000 6150 4000
+	5250 3750 5400 3750
 Wire Wire Line
-	6000 4500 6150 4500
-Connection ~ 6000 4000
+	5250 4250 5400 4250
+Connection ~ 5250 3750
 Wire Wire Line
-	6000 4000 6000 4500
+	5250 3750 5250 4250
 Wire Wire Line
-	6000 4500 6000 5000
-Connection ~ 6000 5000
+	5250 4250 5250 4750
 $Sheet
-S 6150 4850 900  300 
+S 5400 4600 900  300 
 U 618E9522
-F0 "sheet618E951A" 50
+F0 "Fuse_18" 50
 F1 "Fuse.sch" 50
-F2 "Power_In" I L 6150 5000 50 
-F3 "Fuse_Out" O R 7050 5000 50 
+F2 "Power_In" I L 5400 4750 50 
+F3 "Fuse_Out" O R 6300 4750 50 
 $EndSheet
-Text HLabel 7150 5000 2    50   Output ~ 0
+Text HLabel 6400 4750 2    50   Output ~ 0
 Fuse_Out18
 Wire Wire Line
-	7050 5000 7150 5000
+	6300 4750 6400 4750
 Wire Wire Line
-	6000 5000 6150 5000
+	5250 4750 5400 4750
+Connection ~ 5250 4250
+Text HLabel 5000 1250 0    50   Input ~ 0
+Vin
 Wire Wire Line
-	6000 5000 6000 5500
-$Sheet
-S 6150 5350 900  300 
-U 618E952A
-F0 "sheet618E951B" 50
-F1 "Fuse.sch" 50
-F2 "Power_In" I L 6150 5500 50 
-F3 "Fuse_Out" O R 7050 5500 50 
-$EndSheet
-$Sheet
-S 6150 5850 900  300 
-U 618E952E
-F0 "sheet618E951C" 50
-F1 "Fuse.sch" 50
-F2 "Power_In" I L 6150 6000 50 
-F3 "Fuse_Out" O R 7050 6000 50 
-$EndSheet
-Text HLabel 7150 5500 2    50   Output ~ 0
-Fuse_Out19
-Wire Wire Line
-	7050 5500 7150 5500
-Text HLabel 7150 6000 2    50   Output ~ 0
-Fuse_Out20
-Wire Wire Line
-	7050 6000 7150 6000
-Wire Wire Line
-	6000 5500 6150 5500
-Wire Wire Line
-	6000 6000 6150 6000
-Connection ~ 6000 5500
-Wire Wire Line
-	6000 5500 6000 6000
+	5000 1250 5250 1250
+Connection ~ 5250 1250
 $EndSCHEMATC

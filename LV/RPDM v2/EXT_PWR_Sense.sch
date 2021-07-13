@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 32
+Sheet 25 30
 Title ""
 Date ""
 Rev ""
@@ -34,10 +34,10 @@ AR Path="/5E554D5D/60DED789/60E948E2" Ref="K?"  Part="1"
 AR Path="/5E554D5D/60DEDCB5/60E948E2" Ref="K?"  Part="1" 
 AR Path="/60E5EBEF/60E948E2" Ref="K?"  Part="1" 
 AR Path="/60E948E2" Ref="K?"  Part="1" 
-AR Path="/60E91844/60E948E2" Ref="K1"  Part="1" 
-F 0 "K1" V 5950 3300 50  0000 C CNN
+AR Path="/60E91844/60E948E2" Ref="K3"  Part="1" 
+F 0 "K3" V 5950 3300 50  0000 C CNN
 F 1 "J115F" V 5024 3300 50  0000 C CNN
-F 2 "Relays_Extra:CIT_J115F1" H 5950 3250 50  0001 L CNN
+F 2 "UOWM_Relays:CIT_J115F1" H 5950 3250 50  0001 L CNN
 F 3 "" H 5500 3300 50  0001 C CNN
 	1    5500 3300
 	0    -1   -1   0   
@@ -52,10 +52,10 @@ U 1 1 6198713A
 P 5500 4000
 AR Path="/5E554D5D/60DED789/6198713A" Ref="D?"  Part="1" 
 AR Path="/5E554D5D/5E5E9CA9/6198713A" Ref="D?"  Part="1" 
-AR Path="/60E91844/6198713A" Ref="D1"  Part="1" 
-F 0 "D1" H 5500 4100 50  0000 C CNN
+AR Path="/60E91844/6198713A" Ref="D30"  Part="1" 
+F 0 "D30" H 5500 4100 50  0000 C CNN
 F 1 "D_Schottky_Flyback" H 5500 3900 50  0000 C CNN
-F 2 "Diode_UOWM:TO-277_FSV10150V" H 5500 4000 50  0001 C CNN
+F 2 "UOWM_Diodes:TO-277_FSV10150V" H 5500 4000 50  0001 C CNN
 F 3 "~" H 5500 4000 50  0001 C CNN
 	1    5500 4000
 	1    0    0    -1  
@@ -71,13 +71,8 @@ Wire Wire Line
 Connection ~ 5750 4000
 Wire Wire Line
 	5750 4000 6000 4000
-Connection ~ 5000 3500
-Wire Wire Line
-	4500 3500 5000 3500
 Text HLabel 4500 3200 0    50   Input ~ 0
 EXT_IN
-Text HLabel 4500 3500 0    50   Input ~ 0
-SW_EXT_IN
 Wire Wire Line
 	6000 3500 6000 4000
 Connection ~ 6000 4000
@@ -90,8 +85,8 @@ L power:GND #PWR?
 U 1 1 60E63F21
 P 6000 4500
 AR Path="/60E63F21" Ref="#PWR?"  Part="1" 
-AR Path="/60E91844/60E63F21" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 6000 4250 50  0001 C CNN
+AR Path="/60E91844/60E63F21" Ref="#PWR046"  Part="1" 
+F 0 "#PWR046" H 6000 4250 50  0001 C CNN
 F 1 "GND" H 6000 4375 50  0000 C CNN
 F 2 "" H 6000 4500 50  0001 C CNN
 F 3 "" H 6000 4500 50  0001 C CNN
@@ -103,7 +98,15 @@ BATT_IN
 Wire Wire Line
 	5200 3000 4500 3000
 Wire Wire Line
-	4500 3200 5200 3200
+	4500 3200 5000 3200
 Wire Wire Line
 	5800 3100 6500 3100
+Wire Wire Line
+	5000 3200 5000 3500
+Connection ~ 5000 3200
+Wire Wire Line
+	5000 3200 5200 3200
+Connection ~ 5000 3500
+Text Notes 4500 5000 0    50   ~ 0
+Relay switches on application of external voltage
 $EndSCHEMATC
