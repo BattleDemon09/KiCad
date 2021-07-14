@@ -255,23 +255,23 @@ Wire Notes Line
 $Comp
 L Device2:Q_Dual_PMOS_G1S2G2D2S1D1 Q1
 U 1 1 61140713
-P 8400 3000
-F 0 "Q1" H 8605 2954 50  0000 L CNN
-F 1 "Q_Dual_PMOS" H 8605 3045 50  0000 L CNN
-F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 8450 3000 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/75059/sq3989ev.pdf" H 8450 3000 50  0001 C CNN
-	1    8400 3000
-	1    0    0    1   
-$EndComp
-$Comp
-L Device2:Q_Dual_PMOS_G1S2G2D2S1D1 Q1
-U 2 1 61142490
 P 8400 5000
 F 0 "Q1" H 8605 4954 50  0000 L CNN
 F 1 "Q_Dual_PMOS" H 8605 5045 50  0000 L CNN
 F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 8450 5000 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/75059/sq3989ev.pdf" H 8450 5000 50  0001 C CNN
-	2    8400 5000
+	1    8400 5000
+	1    0    0    1   
+$EndComp
+$Comp
+L Device2:Q_Dual_PMOS_G1S2G2D2S1D1 Q1
+U 2 1 61142490
+P 8400 3000
+F 0 "Q1" H 8605 2954 50  0000 L CNN
+F 1 "Q_Dual_PMOS" H 8605 3045 50  0000 L CNN
+F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 8450 3000 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/75059/sq3989ev.pdf" H 8450 3000 50  0001 C CNN
+	2    8400 3000
 	1    0    0    1   
 $EndComp
 $Comp
