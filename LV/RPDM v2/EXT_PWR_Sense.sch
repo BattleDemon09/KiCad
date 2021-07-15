@@ -38,7 +38,7 @@ AR Path="/60E91844/60E948E2" Ref="K3"  Part="1"
 F 0 "K3" V 5950 3300 50  0000 C CNN
 F 1 "J115F" V 5024 3300 50  0000 C CNN
 F 2 "UOWM_Relays:CIT_J115F1" H 5950 3250 50  0001 L CNN
-F 3 "" H 5500 3300 50  0001 C CNN
+F 3 "https://www.citrelay.com/Catalog%20Pages/RelayCatalog/J115F1.pdf" H 5500 3300 50  0001 C CNN
 	1    5500 3300
 	0    -1   -1   0   
 $EndComp

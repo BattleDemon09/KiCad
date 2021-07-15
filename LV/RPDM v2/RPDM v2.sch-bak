@@ -227,19 +227,6 @@ F 3 "https://app.adam-tech.com/products/download/data_sheet/204096/eb167a-04-m-1
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 6150 1800 6500
-$Comp
-L Connector:TestPoint TP3
-U 1 1 61CC88E6
-P 1800 6150
-F 0 "TP3" H 1800 6350 50  0000 C CNN
-F 1 "Battery test point" H 1800 6350 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 2000 6150 50  0001 C CNN
-F 3 "~" H 2000 6150 50  0001 C CNN
-	1    1800 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	1500 6150 1500 6300
 Text Label 1000 6300 0    50   ~ 0
 -24V
@@ -311,26 +298,10 @@ Wire Wire Line
 	8000 2000 7950 2000
 Wire Wire Line
 	8000 2100 7950 2100
-Text Label 2550 3300 0    50   ~ 0
-PDOC_12V
-Text Label 2550 3200 0    50   ~ 0
-BRAKE_LIGHT
-Text Label 2550 3100 0    50   ~ 0
-TSAL_PWR
-Text Label 2550 2600 0    50   ~ 0
-MOTOR_CONTROLLER_2
 Text Label 2550 2500 0    50   ~ 0
 MOTOR_CONTROLLER_1
-Text Label 2550 3000 0    50   ~ 0
-INTERLOCK
-Text Label 2550 2900 0    50   ~ 0
-HV_DIST
 Text Label 2550 2400 0    50   ~ 0
 FPDM
-Text Label 2550 2800 0    50   ~ 0
-BMS_DATALOGGER
-Text Label 2550 2700 0    50   ~ 0
-ACCUMULATOR
 Text Notes 3425 2700 0    40   Italic 0
 2A->
 Text Notes 3425 2800 0    40   Italic 0
@@ -453,42 +424,10 @@ Wire Wire Line
 	8000 2300 7950 2300
 Wire Wire Line
 	9050 3850 9000 3850
-Text Label 9050 3850 0    50   ~ 0
-5V
-Text Label 9050 4550 0    50   ~ 0
-BRAKE_LIGHT
-Text Label 9050 4450 0    50   ~ 0
-PDOC_12V
-Wire Wire Line
-	9050 4450 9000 4450
-Wire Wire Line
-	9050 4550 9000 4550
-Text Label 9050 3950 0    50   ~ 0
-BATT_V
-Text Label 9050 4050 0    50   ~ 0
-BATT_I
-Wire Wire Line
-	9050 4050 9000 4050
-Wire Wire Line
-	9050 3950 9000 3950
-Text Label 9050 4350 0    50   ~ 0
-INTERLOCK_BUTTONS_GND
-Text Label 9050 4150 0    50   ~ 0
-5V_GND
-Text Label 9050 4250 0    50   ~ 0
-TSAL_GND
-Text Label 7950 4550 2    50   ~ 0
-MOTOR_CONTROLLER_2_GND
 Text Label 7950 4450 2    50   ~ 0
 MOTOR_CONTROLLER_1_GND
-Text Label 9050 3750 0    50   ~ 0
-INTERLOCK_GND
-Text Label 9050 3650 0    50   ~ 0
-HV_DIST_GND
 Text Label 7950 4350 2    50   ~ 0
 FPDM_GND
-Text Label 9050 3550 0    50   ~ 0
-BMS_DATALOGGER_GND
 Text Label 7950 4650 2    50   ~ 0
 ACCUMULATOR_GND
 Wire Wire Line
@@ -500,33 +439,13 @@ Wire Wire Line
 Wire Wire Line
 	10050 3650 9000 3650
 Wire Wire Line
-	10050 3750 9000 3750
-Wire Wire Line
 	6850 4450 8000 4450
 Wire Wire Line
 	6850 4550 8000 4550
-Wire Wire Line
-	10050 4250 9000 4250
-Wire Wire Line
-	10050 4350 9000 4350
-Wire Wire Line
-	10050 4150 9000 4150
-Text Label 7950 3850 2    50   ~ 0
-ACCUMULATOR
-Text Label 7950 3950 2    50   ~ 0
-BMS_DATALOGGER
 Text Label 7950 3550 2    50   ~ 0
 FPDM
-Text Label 7950 4050 2    50   ~ 0
-HV_DIST
-Text Label 7950 4150 2    50   ~ 0
-INTERLOCK
 Text Label 7950 3650 2    50   ~ 0
 MOTOR_CONTROLLER_1
-Text Label 7950 3750 2    50   ~ 0
-MOTOR_CONTROLLER_2
-Text Label 7950 4250 2    50   ~ 0
-TSAL_PWR
 Wire Wire Line
 	7950 4250 8000 4250
 Wire Wire Line
@@ -547,11 +466,6 @@ Wire Wire Line
 	10050 3550 10050 3650
 Connection ~ 10050 3650
 Wire Wire Line
-	10050 3650 10050 3750
-Connection ~ 10050 4150
-Wire Wire Line
-	10050 4150 10050 4250
-Wire Wire Line
 	6850 4350 6850 4450
 Connection ~ 6850 4450
 Wire Wire Line
@@ -562,9 +476,6 @@ Wire Wire Line
 Connection ~ 6850 4650
 Wire Wire Line
 	6850 4650 6850 4750
-Wire Wire Line
-	10050 4750 10050 4350
-Connection ~ 10050 4250
 $Comp
 L power:GND #PWR0101
 U 1 1 60F9E2D5
@@ -587,7 +498,6 @@ F 3 "" H 10050 4750 50  0001 C CNN
 	1    10050 4750
 	1    0    0    -1  
 $EndComp
-Connection ~ 10050 3750
 Text Label 7350 2600 2    50   ~ 0
 ACC_FANS
 Wire Wire Line
@@ -599,11 +509,6 @@ Wire Wire Line
 Connection ~ 7450 2600
 Wire Wire Line
 	7450 2600 8000 2600
-Connection ~ 10050 4350
-Wire Wire Line
-	10050 4350 10050 4250
-Wire Wire Line
-	10050 3750 10050 4150
 Wire Wire Line
 	9850 2700 9850 3150
 Connection ~ 9850 2700
@@ -730,4 +635,99 @@ Wire Wire Line
 Connection ~ 1800 6500
 Wire Wire Line
 	1800 6500 2500 6500
+Wire Wire Line
+	10050 3650 10050 3750
+Connection ~ 10050 3750
+Wire Wire Line
+	10050 3750 9000 3750
+Text Label 2550 3200 0    50   ~ 0
+BRAKE_LIGHT
+Text Label 2550 3300 0    50   ~ 0
+PDOC_12V
+Text Label 2550 2900 0    50   ~ 0
+HV_DIST
+Text Label 2550 2700 0    50   ~ 0
+ACCUMULATOR
+Text Label 2550 3100 0    50   ~ 0
+TSAL_PWR
+Text Label 2550 3000 0    50   ~ 0
+INTERLOCK
+Text Label 2550 2800 0    50   ~ 0
+BMS_DATALOGGER
+Text Label 2550 2600 0    50   ~ 0
+MOTOR_CONTROLLER_2
+Wire Wire Line
+	10050 3750 10050 4150
+Connection ~ 10050 4150
+Wire Wire Line
+	10050 4150 9000 4150
+Wire Wire Line
+	10050 4750 10050 4350
+Connection ~ 10050 4350
+Wire Wire Line
+	10050 4350 9000 4350
+Wire Wire Line
+	10050 4350 10050 4250
+Wire Wire Line
+	10050 4150 10050 4250
+Connection ~ 10050 4250
+Wire Wire Line
+	10050 4250 9000 4250
+Wire Wire Line
+	9050 3950 9000 3950
+Wire Wire Line
+	9050 4050 9000 4050
+Wire Wire Line
+	9050 4550 9000 4550
+Wire Wire Line
+	9050 4450 9000 4450
+Text Label 9050 4350 0    50   ~ 0
+INTERLOCK_BUTTONS_GND
+Text Label 9050 4150 0    50   ~ 0
+5V_GND
+Text Label 9050 4550 0    50   ~ 0
+BRAKE_LIGHT
+Text Label 9050 3650 0    50   ~ 0
+HV_DIST_GND
+Text Label 9050 4450 0    50   ~ 0
+PDOC_12V
+Text Label 9050 4050 0    50   ~ 0
+BATT_I
+Text Label 9050 3950 0    50   ~ 0
+BATT_V
+Text Label 9050 3850 0    50   ~ 0
+5V
+Text Label 7950 4050 2    50   ~ 0
+HV_DIST
+Text Label 7950 3850 2    50   ~ 0
+ACCUMULATOR
+Text Label 7950 4250 2    50   ~ 0
+TSAL_PWR
+Text Label 7950 4150 2    50   ~ 0
+INTERLOCK
+Text Label 9050 4250 0    50   ~ 0
+TSAL_GND
+Text Label 9050 3750 0    50   ~ 0
+INTERLOCK_GND
+Text Label 9050 3550 0    50   ~ 0
+BMS_DATALOGGER_GND
+Text Label 7950 4550 2    50   ~ 0
+MOTOR_CONTROLLER_2_GND
+Text Label 7950 3950 2    50   ~ 0
+BMS_DATALOGGER
+Text Label 7950 3750 2    50   ~ 0
+MOTOR_CONTROLLER_2
+$Comp
+L Connector:TestPoint TP3
+U 1 1 61CC88E6
+P 1800 6150
+F 0 "TP3" H 1800 6350 50  0000 C CNN
+F 1 "Battery test point" H 1800 6350 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 2000 6150 50  0001 C CNN
+F 3 "~" H 2000 6150 50  0001 C CNN
+	1    1800 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 6150 1800 6500
 $EndSCHEMATC
