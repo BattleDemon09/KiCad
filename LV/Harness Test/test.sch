@@ -4466,10 +4466,6 @@ DTM 3P REC
 Text Notes 6300 2900 2    50   ~ 0
 DTM 3S PLG
 Entry Wire Line
-	6900 5400 7000 5500
-Entry Wire Line
-	6900 5500 7000 5600
-Entry Wire Line
 	6900 5600 7000 5700
 Entry Wire Line
 	6900 5700 7000 5800
@@ -4535,44 +4531,40 @@ Entry Wire Line
 	6900 8700 7000 8800
 Entry Wire Line
 	6900 8800 7000 8900
-Text Label 4900 5400 0    50   ~ 0
-12V
-Text Label 4900 5500 0    50   ~ 0
-IMD_OK
+Entry Wire Line
+	6900 8900 7000 9000
+Entry Wire Line
+	6900 9000 7000 9100
 Text Label 4900 5600 0    50   ~ 0
-IMD_PWM
+12V
 Text Label 4900 5700 0    50   ~ 0
+IMD_OK
+Text Label 4900 5900 0    50   ~ 0
 MP1_IN
-Text Label 4900 5800 0    50   ~ 0
-MP1_OUT
 Text Label 4900 6000 0    50   ~ 0
-MP1_IN
+MP1_OUT
 $Comp
 L Connector:Conn_01x35_Male J?
 U 1 1 60F371BB
-P 6000 7100
-F 0 "J?" H 6100 8950 50  0001 C CNN
-F 1 "Conn_01x35_Male" H 6300 5300 50  0001 C CNN
-F 2 "" H 6000 7100 50  0001 C CNN
-F 3 "~" H 6000 7100 50  0001 C CNN
-	1    6000 7100
+P 6000 7300
+F 0 "J?" H 6100 9150 50  0001 C CNN
+F 1 "Conn_01x35_Male" H 6300 5500 50  0001 C CNN
+F 2 "" H 6000 7300 50  0001 C CNN
+F 3 "~" H 6000 7300 50  0001 C CNN
+	1    6000 7300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x35_Female J?
 U 1 1 60F3ACA1
-P 6000 7100
-F 0 "J?" H 5850 8950 50  0001 L CNN
-F 1 "Conn_01x35_Female" H 5250 5300 50  0001 L CNN
-F 2 "" H 6000 7100 50  0001 C CNN
-F 3 "~" H 6000 7100 50  0001 C CNN
-	1    6000 7100
+P 6000 7300
+F 0 "J?" H 5850 9150 50  0001 L CNN
+F 1 "Conn_01x35_Female" H 5250 5500 50  0001 L CNN
+F 2 "" H 6000 7300 50  0001 C CNN
+F 3 "~" H 6000 7300 50  0001 C CNN
+	1    6000 7300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6200 5400 6900 5400
-Wire Wire Line
-	6900 5500 6200 5500
 Wire Wire Line
 	6200 5600 6900 5600
 Wire Wire Line
@@ -4598,12 +4590,6 @@ Wire Wire Line
 Wire Wire Line
 	6900 6700 6200 6700
 Wire Wire Line
-	6200 6800 6900 6800
-Wire Wire Line
-	6900 6900 6200 6900
-Wire Wire Line
-	6200 7000 6900 7000
-Wire Wire Line
 	6900 7100 6200 7100
 Wire Wire Line
 	6200 7200 6900 7200
@@ -4616,9 +4602,9 @@ Wire Wire Line
 Wire Wire Line
 	6200 7600 6900 7600
 Wire Wire Line
-	6200 7700 6900 7700
+	6900 7700 6200 7700
 Wire Wire Line
-	6900 7800 6200 7800
+	6200 7800 6900 7800
 Wire Wire Line
 	6200 7900 6900 7900
 Wire Wire Line
@@ -4639,6 +4625,10 @@ Wire Wire Line
 	6200 8700 6900 8700
 Wire Wire Line
 	6900 8800 6200 8800
+Wire Wire Line
+	6200 8900 6900 8900
+Wire Wire Line
+	6900 9000 6200 9000
 $Bitmap
 Pos 5500 4900
 Scale 1.100000
@@ -6775,80 +6765,44 @@ DE 06 BD E7 19 9E 69 D2 B3 46 4A 58 23 E5 5B 80 B3 AE F7 1A 09 5F 86 B5 2D A1 37
 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Text Label 4900 6200 0    50   ~ 0
-PDOC_IN
-Text Label 4900 6100 0    50   ~ 0
-PDOC_OUT
 Text Label 4900 6300 0    50   ~ 0
-V_CHECK
+PDOC_IN
+Text Label 4900 6200 0    50   ~ 0
+PDOC_OUT
 Text Label 4900 6400 0    50   ~ 0
-TEST_IN
-Text Label 4900 6500 0    50   ~ 0
-TEST_OUT
+V_CHECK
 Text Label 4900 6600 0    50   ~ 0
-FAN_EN
+TEST_IN
 Text Label 4900 6700 0    50   ~ 0
-FAN_PWM
+TEST_OUT
 Text Label 4900 6800 0    50   ~ 0
-FAN_MON
+FAN_EN
 Text Label 4900 6900 0    50   ~ 0
-THERM_4
+FAN_PWM
 Text Label 4900 7000 0    50   ~ 0
+FAN_MON
+Text Label 4900 7100 0    50   ~ 0
+THERM_4
+Text Label 4900 7200 0    50   ~ 0
 GND
-Text Label 4900 7500 0    50   ~ 0
-BMS_RDY
-Text Label 4900 7600 0    50   ~ 0
-BMS_CHG
 Text Label 4900 7700 0    50   ~ 0
-CAN1+
+BMS_RDY
 Text Label 4900 7800 0    50   ~ 0
-CAN1-
+BMS_CHG
 Text Label 4900 7900 0    50   ~ 0
-CAN2+
+CAN1+
 Text Label 4900 8000 0    50   ~ 0
-CAN2-
+CAN1-
+Text Label 4900 8100 0    50   ~ 0
+CAN2+
 Text Label 4900 8200 0    50   ~ 0
+CAN2-
+Text Label 4900 8400 0    50   ~ 0
 BMS_GND
-Text Label 4900 8700 0    50   ~ 0
+Text Label 4900 8900 0    50   ~ 0
 CHG_OK
-Text Label 4900 8800 0    50   ~ 0
+Text Label 4900 9000 0    50   ~ 0
 DCH_OK
-Wire Bus Line
-	8300 4750 8300 9000
-Wire Wire Line
-	5800 5400 4900 5400
-Wire Wire Line
-	5800 5500 4900 5500
-Wire Wire Line
-	5800 5600 4900 5600
-Wire Wire Line
-	5800 5700 4900 5700
-Wire Wire Line
-	5800 5800 4900 5800
-Wire Wire Line
-	5800 5900 4900 5900
-Wire Wire Line
-	5800 6000 4900 6000
-Wire Wire Line
-	5800 6100 4900 6100
-Wire Wire Line
-	5800 6200 4900 6200
-Wire Wire Line
-	5800 6300 4900 6300
-Wire Wire Line
-	5800 6400 4900 6400
-Wire Wire Line
-	5800 6500 4900 6500
-Wire Wire Line
-	5800 6600 4900 6600
-Wire Wire Line
-	5800 6700 4900 6700
-Wire Wire Line
-	5800 6800 4900 6800
-Wire Wire Line
-	4900 6900 5800 6900
-Wire Wire Line
-	5800 7000 4900 7000
 Wire Wire Line
 	4900 7100 5800 7100
 Wire Wire Line
@@ -6862,31 +6816,226 @@ Wire Wire Line
 Wire Wire Line
 	5800 7600 4900 7600
 Wire Wire Line
-	4900 7700 5800 7700
-Wire Wire Line
-	5800 7800 4900 7800
-Wire Wire Line
-	4900 7900 5800 7900
-Wire Wire Line
-	5800 8000 4900 8000
-Wire Wire Line
-	4900 8100 5800 8100
-Wire Wire Line
-	5800 8200 4900 8200
-Wire Wire Line
 	4900 8300 5800 8300
 Wire Wire Line
-	5800 8400 4900 8400
+	4900 8500 5800 8500
 Wire Wire Line
-	5800 8500 4900 8500
+	5800 8600 4900 8600
 Wire Wire Line
-	4900 8600 5800 8600
+	5800 8700 4900 8700
 Wire Wire Line
-	4900 8700 5800 8700
-Wire Wire Line
-	5800 8800 4900 8800
+	4900 8800 5800 8800
 Wire Bus Line
-	7000 9000 8300 9000
+	7000 9200 8300 9200
+Wire Notes Line
+	2300 5750 2300 9350
+Wire Notes Line
+	2300 9350 1150 9350
+Wire Notes Line
+	1150 9350 1150 5750
+Wire Notes Line
+	1150 5750 2300 5750
+Text Notes 1150 5850 0    50   ~ 0
+BMS Main I/O
+Wire Notes Line
+	3600 5850 3600 5500
+Wire Notes Line
+	3600 5850 2450 5850
+Wire Notes Line
+	2450 5850 2450 5500
+Wire Notes Line
+	2450 5500 3600 5500
+Text Notes 2450 5600 0    50   ~ 0
+IMD
+Wire Wire Line
+	3000 5800 5800 5800
+Wire Wire Line
+	3000 5700 5800 5700
+Wire Wire Line
+	3000 5600 5800 5600
+Text Label 4900 6500 0    50   ~ 0
+INTERLOCK
+Text Label 3000 5600 0    50   ~ 0
+12V
+Wire Notes Line
+	3600 6100 2450 6100
+Wire Notes Line
+	2450 6100 2450 6550
+Wire Notes Line
+	2450 6550 3600 6550
+Wire Notes Line
+	3600 6550 3600 6100
+Text Notes 2450 6200 0    50   ~ 0
+Pre-Charge
+Text Label 3000 6200 0    50   ~ 0
+PDOC_OUT
+Text Label 3000 6300 0    50   ~ 0
+PDOC_IN
+Text Label 3000 6400 0    50   ~ 0
+V_CHECK
+Text Label 3000 6500 0    50   ~ 0
+INTERLOCK
+Text Label 3000 5700 0    50   ~ 0
+IMD_OK
+Text Label 4900 5800 0    50   ~ 0
+IMD_PWM
+Text Label 3000 5800 0    50   ~ 0
+IMD_PWM
+Text Label 6350 8700 0    50   ~ 0
+Un-populated
+Text Label 6350 8800 0    50   ~ 0
+Un-populated
+Text Label 6350 8600 0    50   ~ 0
+Un-populated
+Text Label 6350 8500 0    50   ~ 0
+Un-populated
+Text Label 6350 7600 0    50   ~ 0
+Un-populated
+Text Label 6350 7500 0    50   ~ 0
+Un-populated
+Text Label 6350 7400 0    50   ~ 0
+Un-populated
+Text Label 6350 7300 0    50   ~ 0
+Un-populated
+Text Label 6350 6100 0    50   ~ 0
+Un-populated
+Text Label 4900 7600 0    50   ~ 0
+Un-populated
+Text Label 4900 7500 0    50   ~ 0
+Un-populated
+Text Label 4900 7400 0    50   ~ 0
+Un-populated
+Text Label 4900 7300 0    50   ~ 0
+Un-populated
+Text Label 4900 8500 0    50   ~ 0
+Un-populated
+Text Label 4900 8600 0    50   ~ 0
+Un-populated
+Text Label 4900 8700 0    50   ~ 0
+Un-populated
+Text Label 4900 8800 0    50   ~ 0
+Un-populated
+Wire Wire Line
+	1800 5900 5800 5900
+Wire Wire Line
+	1800 6000 5800 6000
+Wire Wire Line
+	1800 7700 5800 7700
+Wire Wire Line
+	1800 7800 5800 7800
+Wire Wire Line
+	1800 7900 5800 7900
+Wire Wire Line
+	1800 8000 5800 8000
+Wire Wire Line
+	1800 8100 5800 8100
+Wire Wire Line
+	1800 8200 5800 8200
+Wire Wire Line
+	1800 8400 5800 8400
+Wire Wire Line
+	1800 9000 5800 9000
+Wire Wire Line
+	1800 8900 5800 8900
+Text Label 1800 8900 0    50   ~ 0
+CHG_OK
+Text Label 1800 9000 0    50   ~ 0
+DCH_OK
+Text Label 1800 8400 0    50   ~ 0
+BMS_GND
+Text Label 1800 7900 0    50   ~ 0
+CAN1+
+Text Label 1800 8000 0    50   ~ 0
+CAN1-
+Text Label 1800 8100 0    50   ~ 0
+CAN2+
+Text Label 1800 8200 0    50   ~ 0
+CAN2-
+Text Label 1800 7700 0    50   ~ 0
+BMS_RDY
+Text Label 1800 7800 0    50   ~ 0
+BMS_CHG
+Text Label 1800 5900 0    50   ~ 0
+MP1_IN
+Text Label 1800 6000 0    50   ~ 0
+MP1_OUT
+Text Label 1800 6900 0    50   ~ 0
+FAN_EN
+Text Label 1800 7000 0    50   ~ 0
+FAN_PWM
+Text Label 1800 7100 0    50   ~ 0
+FAN_MON
+Text Notes 7600 2150 0    157  ~ 31
+LV Harness
+Connection ~ 8300 9200
+Wire Bus Line
+	8300 9200 8300 10650
+Wire Bus Line
+	8300 4750 8300 9200
+Text Notes 5150 5350 0    50   ~ 0
+Ampseal 35 REC
+Text Notes 6150 5350 0    50   ~ 0
+Ampseal 35 PLU
+Wire Wire Line
+	3000 6500 5800 6500
+Wire Wire Line
+	3000 6400 5800 6400
+Wire Wire Line
+	3000 6300 5800 6300
+Wire Wire Line
+	3000 6200 5800 6200
+Text Label 4150 6650 0    50   ~ 0
+TEST_IN
+Text Label 4150 6750 0    50   ~ 0
+TEST_OUT
+Wire Wire Line
+	4650 6600 4650 6650
+Wire Wire Line
+	4650 6650 4150 6650
+Wire Wire Line
+	4650 6600 5800 6600
+Wire Wire Line
+	4150 6750 4650 6750
+Wire Wire Line
+	4650 6750 4650 6700
+Wire Wire Line
+	4650 6700 5800 6700
+Text Notes 3650 6650 0    50   ~ 0
+TEST_LOOP
+Wire Notes Line
+	4550 6550 4550 6800
+Wire Notes Line
+	3650 6550 3650 6800
+Wire Wire Line
+	1800 6900 4650 6900
+Wire Wire Line
+	4650 6900 4650 6800
+Wire Wire Line
+	4700 6900 4700 7000
+Wire Wire Line
+	1800 7000 4700 7000
+Wire Wire Line
+	4750 7000 4750 7100
+Wire Wire Line
+	1800 7100 4750 7100
+Wire Wire Line
+	6200 7000 6900 7000
+Wire Wire Line
+	6200 6900 6900 6900
+Wire Wire Line
+	6900 6800 6200 6800
+Wire Wire Line
+	4650 6800 5800 6800
+Wire Wire Line
+	4700 6900 5800 6900
+Wire Wire Line
+	4750 7000 5800 7000
+Wire Notes Line
+	3650 6800 4550 6800
+Wire Notes Line
+	3650 6550 4550 6550
+Text Label 4900 8300 0    50   ~ 0
+BMS_OK
 Wire Bus Line
 	6950 1950 6950 2250
 Wire Bus Line
@@ -6896,8 +7045,9 @@ Wire Bus Line
 Wire Bus Line
 	9400 3600 9400 4750
 Wire Bus Line
-	7000 5500 7000 9000
-Connection ~ 8300 9000
-Wire Bus Line
-	8300 9000 8300 10650
+	7000 5700 7000 9200
+Wire Wire Line
+	5800 6100 4900 6100
+Text Label 4900 6100 0    50   ~ 0
+AMP_OUT
 $EndSCHEMATC
