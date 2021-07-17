@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 30
+Sheet 1 1
 Title "Rear Power Distribution Module"
 Date "2021-06-28"
 Rev "2"
@@ -24,16 +24,6 @@ F 3 "" H 7100 3200 50  0001 C CNN
 	1    7100 3200
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 1500 3900 1000 400 
-U 6106042D
-F0 "alt TSAL Logic" 50
-F1 "alt_TSAL_Logic.sch" 50
-F2 "Red_Out" O R 2500 4100 50 
-F3 "Green_Out" O R 2500 4200 50 
-F4 "Vin" I L 1500 4000 50 
-F5 "TSAT" I R 2500 4000 50 
-$EndSheet
 Text Label 1300 3350 2    70   ~ 0
 12V
 Text Label 2550 4100 0    50   ~ 0
@@ -95,162 +85,12 @@ Wire Wire Line
 	1400 3350 1400 4000
 Wire Wire Line
 	1500 3350 1400 3350
-$Sheet
-S 1500 1500 1000 2100
-U 5E553C05
-F0 "Fuse Blocks" 50
-F1 "Fuses.sch" 50
-F2 "Fuse_Out1" O R 2500 1600 50 
-F3 "Fuse_Out2" O R 2500 1700 50 
-F4 "Fuse_Out3" O R 2500 1800 50 
-F5 "Fuse_Out4" O R 2500 1900 50 
-F6 "Fuse_Out5" O R 2500 2000 50 
-F7 "Fuse_Out6" O R 2500 2100 50 
-F8 "Fuse_Out7" O R 2500 2200 50 
-F9 "Fuse_Out8" O R 2500 2300 50 
-F10 "Fuse_Out11" O R 2500 2600 50 
-F11 "Fuse_Out12" O R 2500 2700 50 
-F12 "Fuse_Out9" O R 2500 2400 50 
-F13 "Fuse_Out10" O R 2500 2500 50 
-F14 "Fuse_Out13" O R 2500 2800 50 
-F15 "Fuse_Out14" O R 2500 2900 50 
-F16 "Vin" I L 1500 3350 50 
-F17 "Fuse_Out15" O R 2500 3000 50 
-F18 "Fuse_Out16" O R 2500 3100 50 
-F19 "Fuse_Out17" O R 2500 3200 50 
-F20 "Fuse_Out18" O R 2500 3300 50 
-$EndSheet
-$Sheet
-S 4000 2200 1000 200 
-U 5E553FD7
-F0 "5V" 50
-F1 "5V_DCDC.sch" 50
-F2 "12V_IN" I L 4000 2300 50 
-F3 "5V_OUT" O R 5000 2300 50 
-$EndSheet
 Text Label 7950 2600 2    50   ~ 0
 ACC_FAN_1
 Text Label 7950 2700 2    50   ~ 0
 ACC_FAN_2
 Wire Wire Line
 	2500 2300 4000 2300
-$Sheet
-S 4000 6300 800  500 
-U 61BFBFBE
-F0 "I/V sense" 50
-F1 "IVsense.sch" 50
-F2 "V_IN" I L 4000 6400 50 
-F3 "5V_IN" I L 4000 6500 50 
-F4 "V_OUT" O R 4800 6400 50 
-F5 "24V_Monitor" O R 4800 6600 50 
-F6 "24I_Monitor" O R 4800 6700 50 
-$EndSheet
-Wire Wire Line
-	1650 6400 1650 6150
-$Sheet
-S 5500 6300 800  500 
-U 5E545B2D
-F0 "DCDC" 50
-F1 "12V_DCDC.sch" 50
-F2 "24V_IN" I L 5500 6400 50 
-F3 "12V_OUT" O R 6300 6400 50 
-$EndSheet
-Wire Wire Line
-	6300 6400 6500 6400
-Text Label 6500 6400 0    70   ~ 0
-12V
-Wire Wire Line
-	4800 6400 5500 6400
-$Sheet
-S 2500 6300 800  500 
-U 60E91844
-F0 "ext. power switching" 50
-F1 "EXT_PWR_Sense.sch" 50
-F2 "EXT_IN" I L 2500 6500 50 
-F3 "BATT_IN" I L 2500 6400 50 
-F4 "V_OUT" O R 3300 6400 50 
-$EndSheet
-Wire Wire Line
-	3300 6400 4000 6400
-Wire Wire Line
-	4800 6600 4900 6600
-Text Label 4900 6700 0    50   ~ 0
-BATT_I
-Text Label 4900 6600 0    50   ~ 0
-BATT_V
-Wire Wire Line
-	4800 6700 4900 6700
-Text Label 3900 6500 2    50   ~ 0
-5V
-Wire Wire Line
-	3900 6500 4000 6500
-Wire Notes Line
-	3750 6000 3750 7500
-Wire Notes Line
-	5250 6000 5250 7500
-Text Notes 750  7200 0    50   ~ 0
-GLV power in (18-25V)
-Text Notes 4000 7200 0    50   ~ 0
-Measure Current/Voltage
-Text Notes 5500 7200 0    50   ~ 0
-Convert to 12V
-Wire Notes Line
-	6750 5750 6750 7500
-Wire Notes Line
-	750  5750 6750 5750
-Text Notes 3450 5900 0    70   ~ 0
-Power Entry
-Wire Wire Line
-	1500 6300 1000 6300
-$Comp
-L Connector:TestPoint TP2
-U 1 1 60EC5F73
-P 1650 6150
-F 0 "TP2" H 1650 6350 50  0000 C CNN
-F 1 "Ext. power test point" H 1650 6350 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 1850 6150 50  0001 C CNN
-F 3 "~" H 1850 6150 50  0001 C CNN
-	1    1650 6150
-	1    0    0    -1  
-$EndComp
-Text Label 1000 6500 0    50   ~ 0
-+24V_EXT
-$Comp
-L Connector:Screw_Terminal_01x03 J1
-U 1 1 60EAFFB2
-P 800 6400
-F 0 "J1" H 718 6717 50  0000 C CNN
-F 1 "24V_IN" H 718 6626 50  0000 C CNN
-F 2 "UOWM_TerminalBlocks:EB167A-03-M" H 800 6400 50  0001 C CNN
-F 3 "https://app.adam-tech.com/products/download/data_sheet/204096/eb167a-04-m-180-data-sheet.pdf" H 800 6400 50  0001 C CNN
-	1    800  6400
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1500 6150 1500 6300
-Text Label 1000 6300 0    50   ~ 0
--24V
-Text Label 1000 6400 0    50   ~ 0
-+24V_BATT
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5E7DA965
-P 1500 6150
-F 0 "TP1" H 1500 6350 50  0000 C CNN
-F 1 "GND Test Point" H 1500 6350 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 1700 6150 50  0001 C CNN
-F 3 "~" H 1700 6150 50  0001 C CNN
-	1    1500 6150
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	2250 6000 2250 7500
-Text Notes 2500 7200 0    50   ~ 0
-External power switching
-Text Label 5500 6400 2    25   ~ 0
-24_DCDC_IN
-Text Label 4000 6400 2    25   ~ 0
-24_ISENSE_IN
 Wire Wire Line
 	7100 2900 7100 3000
 Connection ~ 7100 2900
@@ -328,24 +168,6 @@ Text Label 2550 2300 0    50   ~ 0
 5V_DCDC
 Text Label 5050 1200 0    50   ~ 0
 SPARE_RELAY_1
-$Sheet
-S 4000 1100 1000 900 
-U 5E554D5D
-F0 "Relays" 50
-F1 "Relays.sch" 50
-F2 "Trigger1" I R 5000 1600 50 
-F3 "Trigger2" I R 5000 1700 50 
-F4 "Relay_Out1" O R 5000 1200 50 
-F5 "Relay_Out2" O R 5000 1300 50 
-F6 "Trigger3" I R 5000 1800 50 
-F7 "Relay_Out3" O R 5000 1400 50 
-F8 "Trigger4" I R 5000 1900 50 
-F9 "Relay_Out4" O R 5000 1500 50 
-F10 "Vin_1" I L 4000 1600 50 
-F11 "Vin_2" I L 4000 1700 50 
-F12 "Vin_3" I L 4000 1800 50 
-F13 "Vin_4" I L 4000 1900 50 
-$EndSheet
 Wire Wire Line
 	5000 1700 5050 1700
 Wire Wire Line
@@ -612,30 +434,6 @@ Connection ~ 9850 2200
 Text Label 9050 2200 0    50   ~ 0
 ACC_FAN_1_GND
 Wire Wire Line
-	1000 6400 1650 6400
-Wire Wire Line
-	1000 6500 1800 6500
-$Comp
-L power:GND #PWR01
-U 1 1 5E5439F4
-P 1500 6600
-F 0 "#PWR01" H 1500 6350 50  0001 C CNN
-F 1 "GND" H 1500 6475 50  0000 C CNN
-F 2 "" H 1500 6600 50  0001 C CNN
-F 3 "" H 1500 6600 50  0001 C CNN
-	1    1500 6600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1500 6300 1500 6600
-Connection ~ 1500 6300
-Connection ~ 1650 6400
-Wire Wire Line
-	1650 6400 2500 6400
-Connection ~ 1800 6500
-Wire Wire Line
-	1800 6500 2500 6500
-Wire Wire Line
 	10050 3650 10050 3750
 Connection ~ 10050 3750
 Wire Wire Line
@@ -717,17 +515,6 @@ Text Label 7950 3950 2    50   ~ 0
 BMS_DATALOGGER
 Text Label 7950 3750 2    50   ~ 0
 MOTOR_CONTROLLER_2
-$Comp
-L Connector:TestPoint TP3
-U 1 1 61CC88E6
-P 1800 6150
-F 0 "TP3" H 1800 6350 50  0000 C CNN
-F 1 "Battery test point" H 1800 6350 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 2000 6150 50  0001 C CNN
-F 3 "~" H 2000 6150 50  0001 C CNN
-	1    1800 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1800 6150 1800 6500
+Text HLabel 2500 1600 0    50   Input ~ 0
+RELAY_1
 $EndSCHEMATC
