@@ -1,0 +1,733 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 30
+Title "Rear Power Distribution Module"
+Date "2021-06-28"
+Rev "2"
+Comp "UOW Motorsport"
+Comment1 ""
+Comment2 ""
+Comment3 "Brandon Shaw, Joshua Smedley"
+Comment4 "Design By:"
+$EndDescr
+$Comp
+L power:GND #PWR03
+U 1 1 615896C1
+P 7100 3200
+F 0 "#PWR03" H 7100 2950 50  0001 C CNN
+F 1 "GND" H 7105 3027 50  0000 C CNN
+F 2 "" H 7100 3200 50  0001 C CNN
+F 3 "" H 7100 3200 50  0001 C CNN
+	1    7100 3200
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1500 3900 1000 400 
+U 6106042D
+F0 "alt TSAL Logic" 50
+F1 "alt_TSAL_Logic.sch" 50
+F2 "Red_Out" O R 2500 4100 50 
+F3 "Green_Out" O R 2500 4200 50 
+F4 "Vin" I L 1500 4000 50 
+F5 "TSAT" I R 2500 4000 50 
+$EndSheet
+Text Label 1300 3350 2    70   ~ 0
+12V
+Text Label 2550 4100 0    50   ~ 0
+TSAL_Red
+Text Label 2550 4200 0    50   ~ 0
+TSAL_Green
+Text Label 2550 4000 0    50   ~ 0
+TSAT
+Connection ~ 1400 3350
+Wire Wire Line
+	1300 3350 1400 3350
+Text Label 5050 2300 0    50   ~ 0
+5V
+Wire Wire Line
+	2500 3300 2550 3300
+Wire Wire Line
+	2500 2800 2550 2800
+Wire Wire Line
+	2500 2700 2550 2700
+Wire Wire Line
+	2500 3200 2550 3200
+Wire Wire Line
+	2500 3100 2550 3100
+Wire Wire Line
+	2500 2600 2550 2600
+Wire Wire Line
+	2500 3000 2550 3000
+Wire Wire Line
+	2500 2900 2550 2900
+Wire Wire Line
+	2500 2500 2550 2500
+Wire Wire Line
+	2500 2400 2550 2400
+Wire Wire Line
+	2500 4000 2550 4000
+Wire Wire Line
+	2500 4200 2550 4200
+Wire Wire Line
+	2500 4100 2550 4100
+$Comp
+L 1-770669-1:1-770669-1 J3
+U 1 1 60D74CCA
+P 8500 4050
+F 0 "J3" H 8550 4700 50  0000 R CNN
+F 1 "776180-1" H 8700 3300 50  0000 R CNN
+F 2 "UOWM_Connectors:TE_1-770669-1" H 8500 4050 50  0001 L BNN
+F 3 "" H 8500 4050 50  0001 L BNN
+F 4 "H7" H 8500 4050 50  0001 L BNN "PARTREV"
+F 5 "TE CONNECTIVITY" H 8500 4050 50  0001 L BNN "MANUFACTURER"
+F 6 "STANDARED RECOMENDATION" H 8500 4050 50  0001 L BNN "STANDARD"
+	1    8500 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2300 5050 2300
+Wire Wire Line
+	1400 4000 1500 4000
+Wire Wire Line
+	1400 3350 1400 4000
+Wire Wire Line
+	1500 3350 1400 3350
+$Sheet
+S 1500 1500 1000 2100
+U 5E553C05
+F0 "Fuse Blocks" 50
+F1 "Fuses.sch" 50
+F2 "Fuse_Out1" O R 2500 1600 50 
+F3 "Fuse_Out2" O R 2500 1700 50 
+F4 "Fuse_Out3" O R 2500 1800 50 
+F5 "Fuse_Out4" O R 2500 1900 50 
+F6 "Fuse_Out5" O R 2500 2000 50 
+F7 "Fuse_Out6" O R 2500 2100 50 
+F8 "Fuse_Out7" O R 2500 2200 50 
+F9 "Fuse_Out8" O R 2500 2300 50 
+F10 "Fuse_Out11" O R 2500 2600 50 
+F11 "Fuse_Out12" O R 2500 2700 50 
+F12 "Fuse_Out9" O R 2500 2400 50 
+F13 "Fuse_Out10" O R 2500 2500 50 
+F14 "Fuse_Out13" O R 2500 2800 50 
+F15 "Fuse_Out14" O R 2500 2900 50 
+F16 "Vin" I L 1500 3350 50 
+F17 "Fuse_Out15" O R 2500 3000 50 
+F18 "Fuse_Out16" O R 2500 3100 50 
+F19 "Fuse_Out17" O R 2500 3200 50 
+F20 "Fuse_Out18" O R 2500 3300 50 
+$EndSheet
+$Sheet
+S 4000 2200 1000 200 
+U 5E553FD7
+F0 "5V" 50
+F1 "5V_DCDC.sch" 50
+F2 "12V_IN" I L 4000 2300 50 
+F3 "5V_OUT" O R 5000 2300 50 
+$EndSheet
+Text Label 7950 2600 2    50   ~ 0
+ACC_FAN_1
+Text Label 7950 2700 2    50   ~ 0
+ACC_FAN_2
+Wire Wire Line
+	2500 2300 4000 2300
+$Sheet
+S 4000 6300 800  500 
+U 61BFBFBE
+F0 "I/V sense" 50
+F1 "IVsense.sch" 50
+F2 "V_IN" I L 4000 6400 50 
+F3 "5V_IN" I L 4000 6500 50 
+F4 "V_OUT" O R 4800 6400 50 
+F5 "24V_Monitor" O R 4800 6600 50 
+F6 "24I_Monitor" O R 4800 6700 50 
+$EndSheet
+Wire Wire Line
+	1650 6400 1650 6150
+$Sheet
+S 5500 6300 800  500 
+U 5E545B2D
+F0 "DCDC" 50
+F1 "12V_DCDC.sch" 50
+F2 "24V_IN" I L 5500 6400 50 
+F3 "12V_OUT" O R 6300 6400 50 
+$EndSheet
+Wire Wire Line
+	6300 6400 6500 6400
+Text Label 6500 6400 0    70   ~ 0
+12V
+Wire Wire Line
+	4800 6400 5500 6400
+$Sheet
+S 2500 6300 800  500 
+U 60E91844
+F0 "ext. power switching" 50
+F1 "EXT_PWR_Sense.sch" 50
+F2 "EXT_IN" I L 2500 6500 50 
+F3 "BATT_IN" I L 2500 6400 50 
+F4 "V_OUT" O R 3300 6400 50 
+$EndSheet
+Wire Wire Line
+	3300 6400 4000 6400
+Wire Wire Line
+	4800 6600 4900 6600
+Text Label 4900 6700 0    50   ~ 0
+BATT_I
+Text Label 4900 6600 0    50   ~ 0
+BATT_V
+Wire Wire Line
+	4800 6700 4900 6700
+Text Label 3900 6500 2    50   ~ 0
+5V
+Wire Wire Line
+	3900 6500 4000 6500
+Wire Notes Line
+	3750 6000 3750 7500
+Wire Notes Line
+	5250 6000 5250 7500
+Text Notes 750  7200 0    50   ~ 0
+GLV power in (18-25V)
+Text Notes 4000 7200 0    50   ~ 0
+Measure Current/Voltage
+Text Notes 5500 7200 0    50   ~ 0
+Convert to 12V
+Wire Notes Line
+	6750 5750 6750 7500
+Wire Notes Line
+	750  5750 6750 5750
+Text Notes 3450 5900 0    70   ~ 0
+Power Entry
+Wire Wire Line
+	1500 6300 1000 6300
+$Comp
+L Connector:TestPoint TP2
+U 1 1 60EC5F73
+P 1650 6150
+F 0 "TP2" H 1650 6350 50  0000 C CNN
+F 1 "Ext. power test point" H 1650 6350 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 1850 6150 50  0001 C CNN
+F 3 "~" H 1850 6150 50  0001 C CNN
+	1    1650 6150
+	1    0    0    -1  
+$EndComp
+Text Label 1000 6500 0    50   ~ 0
++24V_EXT
+$Comp
+L Connector:Screw_Terminal_01x03 J1
+U 1 1 60EAFFB2
+P 800 6400
+F 0 "J1" H 718 6717 50  0000 C CNN
+F 1 "24V_IN" H 718 6626 50  0000 C CNN
+F 2 "UOWM_TerminalBlocks:EB167A-03-M" H 800 6400 50  0001 C CNN
+F 3 "https://app.adam-tech.com/products/download/data_sheet/204096/eb167a-04-m-180-data-sheet.pdf" H 800 6400 50  0001 C CNN
+	1    800  6400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 6150 1500 6300
+Text Label 1000 6300 0    50   ~ 0
+-24V
+Text Label 1000 6400 0    50   ~ 0
++24V_BATT
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5E7DA965
+P 1500 6150
+F 0 "TP1" H 1500 6350 50  0000 C CNN
+F 1 "GND Test Point" H 1500 6350 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 1700 6150 50  0001 C CNN
+F 3 "~" H 1700 6150 50  0001 C CNN
+	1    1500 6150
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2250 6000 2250 7500
+Text Notes 2500 7200 0    50   ~ 0
+External power switching
+Text Label 5500 6400 2    25   ~ 0
+24_DCDC_IN
+Text Label 4000 6400 2    25   ~ 0
+24_ISENSE_IN
+Wire Wire Line
+	7100 2900 7100 3000
+Connection ~ 7100 2900
+Wire Wire Line
+	7100 2800 7100 2900
+Text Label 7950 2100 2    50   ~ 0
+SPARE_RELAY_2
+Text Label 7950 2000 2    50   ~ 0
+SPARE_RELAY_1
+Text Label 7950 3100 2    50   ~ 0
+PUMP_1_GND
+Text Label 7950 3000 2    50   ~ 0
+RAD_FAN_1_GND
+Text Label 7950 2800 2    50   ~ 0
+SPARE_RELAY_1_GND
+Text Label 7950 2900 2    50   ~ 0
+SPARE_RELAY_2_GND
+Text Label 7950 2400 2    50   ~ 0
+SPARE_FUSE_1
+Text Label 7950 2500 2    50   ~ 0
+SPARE_FUSE_2
+Wire Wire Line
+	7100 3100 8000 3100
+Wire Wire Line
+	7100 3000 8000 3000
+Wire Wire Line
+	7100 2900 8000 2900
+Wire Wire Line
+	7100 2800 8000 2800
+Wire Wire Line
+	8000 2400 7950 2400
+Wire Wire Line
+	8000 2500 7950 2500
+Connection ~ 7100 3000
+Wire Wire Line
+	7100 3000 7100 3100
+Connection ~ 7100 3100
+Wire Wire Line
+	7100 3100 7100 3200
+Text Label 7950 2300 2    50   ~ 0
+PUMPS
+Text Label 7950 2200 2    50   ~ 0
+RAD_FANS
+Wire Wire Line
+	8000 2000 7950 2000
+Wire Wire Line
+	8000 2100 7950 2100
+Text Label 2550 2500 0    50   ~ 0
+MOTOR_CONTROLLER_1
+Text Label 2550 2400 0    50   ~ 0
+FPDM
+Text Notes 3425 2700 0    40   Italic 0
+2A->
+Text Notes 3425 2800 0    40   Italic 0
+2A->
+Text Notes 3425 2400 0    40   Italic 0
+4A->
+Text Notes 3425 2900 0    40   Italic 0
+2A->
+Text Notes 3425 3000 0    40   Italic 0
+2A->
+Text Notes 3425 2500 0    40   Italic 0
+2A->
+Text Notes 3425 2600 0    40   Italic 0
+2A->
+Text Notes 3425 3100 0    40   Italic 0
+2A->
+Text Notes 3425 3200 0    40   Italic 0
+2A->
+Text Notes 3425 3300 0    40   Italic 0
+2A->
+Text Notes 3425 2300 0    40   Italic 0
+2A->
+Text Label 2550 2300 0    50   ~ 0
+5V_DCDC
+Text Label 5050 1200 0    50   ~ 0
+SPARE_RELAY_1
+$Sheet
+S 4000 1100 1000 900 
+U 5E554D5D
+F0 "Relays" 50
+F1 "Relays.sch" 50
+F2 "Trigger1" I R 5000 1600 50 
+F3 "Trigger2" I R 5000 1700 50 
+F4 "Relay_Out1" O R 5000 1200 50 
+F5 "Relay_Out2" O R 5000 1300 50 
+F6 "Trigger3" I R 5000 1800 50 
+F7 "Relay_Out3" O R 5000 1400 50 
+F8 "Trigger4" I R 5000 1900 50 
+F9 "Relay_Out4" O R 5000 1500 50 
+F10 "Vin_1" I L 4000 1600 50 
+F11 "Vin_2" I L 4000 1700 50 
+F12 "Vin_3" I L 4000 1800 50 
+F13 "Vin_4" I L 4000 1900 50 
+$EndSheet
+Wire Wire Line
+	5000 1700 5050 1700
+Wire Wire Line
+	5000 1800 5050 1800
+Wire Wire Line
+	5000 1900 5050 1900
+Wire Wire Line
+	5000 1400 5050 1400
+Wire Wire Line
+	5000 1500 5050 1500
+Text Label 5050 1300 0    50   ~ 0
+SPARE_RELAY_2
+Wire Wire Line
+	5000 1600 5050 1600
+Wire Wire Line
+	5000 1300 5050 1300
+Wire Wire Line
+	5000 1200 5050 1200
+Text Label 5050 1400 0    50   ~ 0
+RAD_FANS
+Text Label 5050 1500 0    50   ~ 0
+PUMPS
+Text Label 5050 1800 0    50   ~ 0
+RAD_FAN_Trigger
+Text Label 5050 1900 0    50   ~ 0
+PUMP_1_Trigger
+Text Label 5050 1600 0    50   ~ 0
+SPARE_Trigger_1
+Text Label 5050 1700 0    50   ~ 0
+SPARE_Trigger_2
+Wire Wire Line
+	2500 1900 4000 1900
+Wire Wire Line
+	2500 1800 4000 1800
+Wire Wire Line
+	2500 1600 4000 1600
+Wire Wire Line
+	2500 1700 4000 1700
+Wire Wire Line
+	2500 2000 2550 2000
+Wire Wire Line
+	2500 2100 2550 2100
+Text Notes 3650 2000 2    40   Italic 0
+10A->
+Text Notes 3425 1600 0    40   Italic 0
+10A->
+Text Notes 3650 2100 2    40   Italic 0
+10A->
+Text Notes 3425 1700 0    40   Italic 0
+10A->
+Text Notes 3425 1900 0    40   Italic 0
+10A->
+Text Notes 3425 1800 0    40   Italic 0
+10A->
+Text Label 2550 2000 0    50   ~ 0
+SPARE_FUSE_1
+Text Label 2550 2100 0    50   ~ 0
+SPARE_FUSE_2
+Text Label 2550 1900 0    50   ~ 0
+RELAY_4
+Text Label 2550 1800 0    50   ~ 0
+RELAY_3
+Text Label 2550 1700 0    50   ~ 0
+RELAY_2
+Text Label 2550 1600 0    50   ~ 0
+RELAY_1
+Text Notes 3425 2200 0    40   Italic 0
+20A->
+Wire Wire Line
+	2500 2200 2550 2200
+Text Label 2550 2200 0    50   ~ 0
+ACC_FANS
+Wire Wire Line
+	8000 2200 7950 2200
+Wire Wire Line
+	8000 2300 7950 2300
+Wire Wire Line
+	9050 3850 9000 3850
+Text Label 7950 4450 2    50   ~ 0
+MOTOR_CONTROLLER_1_GND
+Text Label 7950 4350 2    50   ~ 0
+FPDM_GND
+Text Label 7950 4650 2    50   ~ 0
+ACCUMULATOR_GND
+Wire Wire Line
+	6850 4650 8000 4650
+Wire Wire Line
+	10050 3550 9000 3550
+Wire Wire Line
+	6850 4350 8000 4350
+Wire Wire Line
+	10050 3650 9000 3650
+Wire Wire Line
+	6850 4450 8000 4450
+Wire Wire Line
+	6850 4550 8000 4550
+Text Label 7950 3550 2    50   ~ 0
+FPDM
+Text Label 7950 3650 2    50   ~ 0
+MOTOR_CONTROLLER_1
+Wire Wire Line
+	7950 4250 8000 4250
+Wire Wire Line
+	7950 3750 8000 3750
+Wire Wire Line
+	7950 3650 8000 3650
+Wire Wire Line
+	7950 4150 8000 4150
+Wire Wire Line
+	7950 4050 8000 4050
+Wire Wire Line
+	7950 3550 8000 3550
+Wire Wire Line
+	7950 3950 8000 3950
+Wire Wire Line
+	7950 3850 8000 3850
+Wire Wire Line
+	10050 3550 10050 3650
+Connection ~ 10050 3650
+Wire Wire Line
+	6850 4350 6850 4450
+Connection ~ 6850 4450
+Wire Wire Line
+	6850 4450 6850 4550
+Connection ~ 6850 4550
+Wire Wire Line
+	6850 4550 6850 4650
+Connection ~ 6850 4650
+Wire Wire Line
+	6850 4650 6850 4750
+$Comp
+L power:GND #PWR0101
+U 1 1 60F9E2D5
+P 6850 4750
+F 0 "#PWR0101" H 6850 4500 50  0001 C CNN
+F 1 "GND" H 6855 4577 50  0000 C CNN
+F 2 "" H 6850 4750 50  0001 C CNN
+F 3 "" H 6850 4750 50  0001 C CNN
+	1    6850 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 60F9E83D
+P 10050 4750
+F 0 "#PWR0102" H 10050 4500 50  0001 C CNN
+F 1 "GND" H 10055 4577 50  0000 C CNN
+F 2 "" H 10050 4750 50  0001 C CNN
+F 3 "" H 10050 4750 50  0001 C CNN
+	1    10050 4750
+	1    0    0    -1  
+$EndComp
+Text Label 7350 2600 2    50   ~ 0
+ACC_FANS
+Wire Wire Line
+	7350 2600 7450 2600
+Wire Wire Line
+	7450 2700 7450 2600
+Wire Wire Line
+	7450 2700 8000 2700
+Connection ~ 7450 2600
+Wire Wire Line
+	7450 2600 8000 2600
+Wire Wire Line
+	9850 2700 9850 3150
+Connection ~ 9850 2700
+Wire Wire Line
+	9850 2200 9850 2700
+Text Label 9050 2700 0    50   ~ 0
+ACC_FAN_2_GND
+Text Label 9050 2300 0    50   ~ 0
+RAD_FAN_Trigger
+Text Label 9050 2400 0    50   ~ 0
+PUMP_1_Trigger
+Text Label 9050 2500 0    50   ~ 0
+SPARE_Trigger_1
+Text Label 9050 2600 0    50   ~ 0
+SPARE_Trigger_2
+Text Label 9050 3000 0    50   ~ 0
+TSAL_Green
+Text Label 9050 2900 0    50   ~ 0
+TSAL_Red
+Wire Wire Line
+	9050 2800 9000 2800
+Wire Wire Line
+	9050 2900 9000 2900
+Wire Wire Line
+	9050 3000 9000 3000
+Text Label 9050 2800 0    50   ~ 0
+TSAT
+Wire Wire Line
+	9850 2100 9000 2100
+$Comp
+L 1-770669-1:1-770669-1 J2
+U 1 1 6139282B
+P 8500 2500
+F 0 "J2" H 8500 3267 50  0000 C CNN
+F 1 "1-770669-1" H 8500 3176 50  0000 C CNN
+F 2 "UOWM_Connectors:TE_1-770669-1" H 8500 2500 50  0001 L BNN
+F 3 "" H 8500 2500 50  0001 L BNN
+F 4 "TE Connectivity" H 8500 2500 50  0001 L BNN "MANUFACTURER"
+F 5 "" H 8500 2500 50  0001 L BNN "LATEST_REV_NOTE"
+F 6 "4mm" H 8500 2500 50  0001 L BNN "PITCH"
+F 7 "09, March 2016" H 8500 2500 50  0001 L BNN "LATEST_REV_DATE"
+F 8 "" H 8500 2500 50  0001 L BNN "SIGNAL_INTEGRITY"
+F 9 "" H 8500 2500 50  0001 L BNN "FOOTPRINT_REFERENCE"
+F 10 "" H 8500 2500 50  0001 L BNN "LIBRARY_PATH"
+F 11 "250VAC" H 8500 2500 50  0001 L BNN "VOLTAGE_RATING"
+F 12 "1-770669-1.lbr" H 8500 2500 50  0001 L BNN "LIBRARY_REF"
+F 13 "CONN HEADER RT ANG 23POS PCB AU" H 8500 2500 50  0001 L BNN "PART_DESCRIPTION"
+F 14 "" H 8500 2500 50  0001 L BNN "PUBLISHED_DATE"
+F 15 "SnapEDA" H 8500 2500 50  0001 L BNN "PUBLISHER"
+F 16 "Panel Mount, Through Hole, Right angled" H 8500 2500 50  0001 L BNN "PACKAGE"
+F 17 "Varies by Wire gauge" H 8500 2500 50  0001 L BNN "CURRENT_RATING"
+F 18 "" H 8500 2500 50  0001 L BNN "DESIGNATOR"
+F 19 "1-770669-1" H 8500 2500 50  0001 L BNN "TE_PN"
+F 20 "23" H 8500 2500 50  0001 L BNN "POS"
+F 21 "TE_1-770669-1" H 8500 2500 50  0001 L BNN "FOOTPRINT"
+F 22 "1-770669-X" H 8500 2500 50  0001 L BNN "SERIES"
+F 23 "K11" H 8500 2500 50  0001 L BNN "PART_REV"
+F 24 "" H 8500 2500 50  0001 L BNN "FOOTPRINT_PATH"
+F 25 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=770669&DocType=Customer+Drawing&DocLang=English" H 8500 2500 50  0001 L BNN "DATASHEET"
+F 26 "manufacturer recommendations" H 8500 2500 50  0001 L BNN "STANDARD"
+F 27 "" H 8500 2500 50  0001 L BNN "SPICE_MODEL"
+F 28 "Lead free/RoHS compliant" H 8500 2500 50  0001 L BNN "COMPLIANCE"
+	1    8500 2500
+	1    0    0    -1  
+$EndComp
+Text Label 9050 2100 0    50   ~ 0
+SPARE_FUSE_2_GND
+Text Label 9050 2000 0    50   ~ 0
+SPARE_FUSE_1_GND
+Wire Wire Line
+	9050 2600 9000 2600
+Wire Wire Line
+	9050 2500 9000 2500
+Wire Wire Line
+	9050 2400 9000 2400
+Wire Wire Line
+	9050 2300 9000 2300
+Wire Wire Line
+	9850 2000 9000 2000
+Wire Wire Line
+	9850 2700 9000 2700
+Wire Wire Line
+	9850 2200 9000 2200
+$Comp
+L power:GND #PWR02
+U 1 1 611642A6
+P 9850 3150
+F 0 "#PWR02" H 9850 2900 50  0001 C CNN
+F 1 "GND" H 9855 2977 50  0000 C CNN
+F 2 "" H 9850 3150 50  0001 C CNN
+F 3 "" H 9850 3150 50  0001 C CNN
+	1    9850 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 2000 9850 2100
+Connection ~ 9850 2100
+Wire Wire Line
+	9850 2100 9850 2200
+Connection ~ 9850 2200
+Text Label 9050 2200 0    50   ~ 0
+ACC_FAN_1_GND
+Wire Wire Line
+	1000 6400 1650 6400
+Wire Wire Line
+	1000 6500 1800 6500
+$Comp
+L power:GND #PWR01
+U 1 1 5E5439F4
+P 1500 6600
+F 0 "#PWR01" H 1500 6350 50  0001 C CNN
+F 1 "GND" H 1500 6475 50  0000 C CNN
+F 2 "" H 1500 6600 50  0001 C CNN
+F 3 "" H 1500 6600 50  0001 C CNN
+	1    1500 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 6300 1500 6600
+Connection ~ 1500 6300
+Connection ~ 1650 6400
+Wire Wire Line
+	1650 6400 2500 6400
+Connection ~ 1800 6500
+Wire Wire Line
+	1800 6500 2500 6500
+Wire Wire Line
+	10050 3650 10050 3750
+Connection ~ 10050 3750
+Wire Wire Line
+	10050 3750 9000 3750
+Text Label 2550 3200 0    50   ~ 0
+BRAKE_LIGHT
+Text Label 2550 3300 0    50   ~ 0
+PDOC_12V
+Text Label 2550 2900 0    50   ~ 0
+HV_DIST
+Text Label 2550 2700 0    50   ~ 0
+ACCUMULATOR
+Text Label 2550 3100 0    50   ~ 0
+TSAL_PWR
+Text Label 2550 3000 0    50   ~ 0
+INTERLOCK
+Text Label 2550 2800 0    50   ~ 0
+BMS_DATALOGGER
+Text Label 2550 2600 0    50   ~ 0
+MOTOR_CONTROLLER_2
+Wire Wire Line
+	10050 3750 10050 4150
+Connection ~ 10050 4150
+Wire Wire Line
+	10050 4150 9000 4150
+Wire Wire Line
+	10050 4750 10050 4350
+Connection ~ 10050 4350
+Wire Wire Line
+	10050 4350 9000 4350
+Wire Wire Line
+	10050 4350 10050 4250
+Wire Wire Line
+	10050 4150 10050 4250
+Connection ~ 10050 4250
+Wire Wire Line
+	10050 4250 9000 4250
+Wire Wire Line
+	9050 3950 9000 3950
+Wire Wire Line
+	9050 4050 9000 4050
+Wire Wire Line
+	9050 4550 9000 4550
+Wire Wire Line
+	9050 4450 9000 4450
+Text Label 9050 4350 0    50   ~ 0
+INTERLOCK_BUTTONS_GND
+Text Label 9050 4150 0    50   ~ 0
+5V_GND
+Text Label 9050 4550 0    50   ~ 0
+BRAKE_LIGHT
+Text Label 9050 3650 0    50   ~ 0
+HV_DIST_GND
+Text Label 9050 4450 0    50   ~ 0
+PDOC_12V
+Text Label 9050 4050 0    50   ~ 0
+BATT_I
+Text Label 9050 3950 0    50   ~ 0
+BATT_V
+Text Label 9050 3850 0    50   ~ 0
+5V
+Text Label 7950 4050 2    50   ~ 0
+HV_DIST
+Text Label 7950 3850 2    50   ~ 0
+ACCUMULATOR
+Text Label 7950 4250 2    50   ~ 0
+TSAL_PWR
+Text Label 7950 4150 2    50   ~ 0
+INTERLOCK
+Text Label 9050 4250 0    50   ~ 0
+TSAL_GND
+Text Label 9050 3750 0    50   ~ 0
+INTERLOCK_GND
+Text Label 9050 3550 0    50   ~ 0
+BMS_DATALOGGER_GND
+Text Label 7950 4550 2    50   ~ 0
+MOTOR_CONTROLLER_2_GND
+Text Label 7950 3950 2    50   ~ 0
+BMS_DATALOGGER
+Text Label 7950 3750 2    50   ~ 0
+MOTOR_CONTROLLER_2
+$Comp
+L Connector:TestPoint TP3
+U 1 1 61CC88E6
+P 1800 6150
+F 0 "TP3" H 1800 6350 50  0000 C CNN
+F 1 "Battery test point" H 1800 6350 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 2000 6150 50  0001 C CNN
+F 3 "~" H 2000 6150 50  0001 C CNN
+	1    1800 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 6150 1800 6500
+$EndSCHEMATC
